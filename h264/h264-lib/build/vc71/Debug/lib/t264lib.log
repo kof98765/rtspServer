@@ -1,0 +1,158 @@
+﻿生成启动时间为 2015/6/16 13:34:01。
+     1>项目“D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\build\vc71\t264lib.vcxproj”在节点 3 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在对“Debug\lib\t264lib.unsuccessfulbuild”执行 Touch 任务。
+       CustomBuild:
+         Performing Custom Build Tools
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\cpu.asm(73): warning : label alone on a line without a colon might be in error
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\cpu.asm(106): warning : label alone on a line without a colon might be in error
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\cpu.asm(120): warning : label alone on a line without a colon might be in error
+         Performing Custom Build Tools
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\dct_sse2.asm(138): warning : label alone on a line without a colon might be in error
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\dct_sse2.asm(177): warning : label alone on a line without a colon might be in error
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\dct_sse2.asm(228): warning : label alone on a line without a colon might be in error
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\dct_sse2.asm(279): warning : label alone on a line without a colon might be in error
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\dct_sse2.asm(318): warning : label alone on a line without a colon might be in error
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\dct_sse2.asm(480): warning : label alone on a line without a colon might be in error
+         Performing Custom Build Tools
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\interpolate_sse2.asm(57): warning : label alone on a line without a colon might be in error
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\interpolate_sse2.asm(73): warning : label alone on a line without a colon might be in error
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\interpolate_sse2.asm(77): warning : label alone on a line without a colon might be in error
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\interpolate_sse2.asm(137): warning : label alone on a line without a colon might be in error
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\interpolate_sse2.asm(152): warning : label alone on a line without a colon might be in error
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\interpolate_sse2.asm(156): warning : label alone on a line without a colon might be in error
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\interpolate_sse2.asm(223): warning : label alone on a line without a colon might be in error
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\interpolate_sse2.asm(296): warning : label alone on a line without a colon might be in error
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\interpolate_sse2.asm(331): warning : label alone on a line without a colon might be in error
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\interpolate_sse2.asm(370): warning : label alone on a line without a colon might be in error
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\interpolate_sse2.asm(403): warning : label alone on a line without a colon might be in error
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\interpolate_sse2.asm(440): warning : label alone on a line without a colon might be in error
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\interpolate_sse2.asm(485): warning : label alone on a line without a colon might be in error
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\interpolate_sse2.asm(522): warning : label alone on a line without a colon might be in error
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\interpolate_sse2.asm(567): warning : label alone on a line without a colon might be in error
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\interpolate_sse2.asm(605): warning : label alone on a line without a colon might be in error
+         Performing Custom Build Tools
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\sad.asm(90): warning : label alone on a line without a colon might be in error
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\sad.asm(128): warning : label alone on a line without a colon might be in error
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\sad.asm(162): warning : label alone on a line without a colon might be in error
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\sad.asm(210): warning : label alone on a line without a colon might be in error
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\sad.asm(250): warning : label alone on a line without a colon might be in error
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\sad.asm(286): warning : label alone on a line without a colon might be in error
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\sad.asm(327): warning : label alone on a line without a colon might be in error
+         Performing Custom Build Tools
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\utility_mmx.asm(86): warning : label alone on a line without a colon might be in error
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\utility_mmx.asm(119): warning : label alone on a line without a colon might be in error
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\utility_mmx.asm(135): warning : label alone on a line without a colon might be in error
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\utility_mmx.asm(180): warning : label alone on a line without a colon might be in error
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\utility_mmx.asm(196): warning : label alone on a line without a colon might be in error
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\utility_mmx.asm(231): warning : label alone on a line without a colon might be in error
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\utility_mmx.asm(244): warning : label alone on a line without a colon might be in error
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\utility_mmx.asm(246): warning : label alone on a line without a colon might be in error
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\utility_mmx.asm(274): warning : label alone on a line without a colon might be in error
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\utility_mmx.asm(291): warning : label alone on a line without a colon might be in error
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\utility_mmx.asm(294): warning : label alone on a line without a colon might be in error
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\utility_mmx.asm(348): warning : label alone on a line without a colon might be in error
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\utility_mmx.asm(365): warning : label alone on a line without a colon might be in error
+     1>D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\encoder\sse2\utility_mmx.asm(368): warning : label alone on a line without a colon might be in error
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../../common /I../../encoder/plugins /I../../encoder /I../../encoder/sse2 /I../../decoder /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\lib\\" /Fd"Debug\lib\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\decoder\block.c ..\..\encoder\cabac.c ..\..\common\cabac_engine.c ..\..\encoder\cavlc.c ..\..\common\dct.c ..\..\common\deblock.c ..\..\decoder\dec_cabac.c ..\..\decoder\dec_cavlc.c ..\..\encoder\estimation.c ..\..\encoder\inter.c ..\..\encoder\inter_b.c ..\..\encoder\interpolate.c ..\..\encoder\intra.c ..\..\encoder\predict.c ..\..\encoder\plugins\ratecontrol.c ..\..\encoder\rbsp.c ..\..\encoder\plugins\stat.c ..\..\decoder\T264dec.c ..\..\encoder\t264enc.c ..\..\encoder\typedecision.c ..\..\common\utility.c
+         utility.c
+         typedecision.c
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\common\t264.h(36): warning C4005: “DECLARE_ALIGNED_MATRIX_H”: 宏重定义
+                 d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\common\portab.h(84) : 参见“DECLARE_ALIGNED_MATRIX_H”的前一个定义
+         t264enc.c
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\common\t264.h(36): warning C4005: “DECLARE_ALIGNED_MATRIX_H”: 宏重定义
+                 d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\common\portab.h(84) : 参见“DECLARE_ALIGNED_MATRIX_H”的前一个定义
+         T264dec.c
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\common\t264.h(36): warning C4005: “DECLARE_ALIGNED_MATRIX_H”: 宏重定义
+                 d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\common\portab.h(84) : 参见“DECLARE_ALIGNED_MATRIX_H”的前一个定义
+         stat.c
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\common\t264.h(36): warning C4005: “DECLARE_ALIGNED_MATRIX_H”: 宏重定义
+                 d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\common\portab.h(84) : 参见“DECLARE_ALIGNED_MATRIX_H”的前一个定义
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\plugins\stat.c(162): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : 参见“fopen”的声明
+         rbsp.c
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\common\t264.h(36): warning C4005: “DECLARE_ALIGNED_MATRIX_H”: 宏重定义
+                 d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\common\portab.h(84) : 参见“DECLARE_ALIGNED_MATRIX_H”的前一个定义
+         ratecontrol.c
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\common\t264.h(36): warning C4005: “DECLARE_ALIGNED_MATRIX_H”: 宏重定义
+                 d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\common\portab.h(84) : 参见“DECLARE_ALIGNED_MATRIX_H”的前一个定义
+         predict.c
+         intra.c
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\common\t264.h(36): warning C4005: “DECLARE_ALIGNED_MATRIX_H”: 宏重定义
+                 d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\common\portab.h(84) : 参见“DECLARE_ALIGNED_MATRIX_H”的前一个定义
+         interpolate.c
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\common\t264.h(36): warning C4005: “DECLARE_ALIGNED_MATRIX_H”: 宏重定义
+                 d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\common\portab.h(84) : 参见“DECLARE_ALIGNED_MATRIX_H”的前一个定义
+         inter_b.c
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\common\t264.h(36): warning C4005: “DECLARE_ALIGNED_MATRIX_H”: 宏重定义
+                 d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\common\portab.h(84) : 参见“DECLARE_ALIGNED_MATRIX_H”的前一个定义
+         inter.c
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\common\t264.h(36): warning C4005: “DECLARE_ALIGNED_MATRIX_H”: 宏重定义
+                 d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\common\portab.h(84) : 参见“DECLARE_ALIGNED_MATRIX_H”的前一个定义
+         estimation.c
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\common\t264.h(36): warning C4005: “DECLARE_ALIGNED_MATRIX_H”: 宏重定义
+                 d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\common\portab.h(84) : 参见“DECLARE_ALIGNED_MATRIX_H”的前一个定义
+         dec_cavlc.c
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\common\t264.h(36): warning C4005: “DECLARE_ALIGNED_MATRIX_H”: 宏重定义
+                 d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\common\portab.h(84) : 参见“DECLARE_ALIGNED_MATRIX_H”的前一个定义
+         dec_cabac.c
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\common\t264.h(36): warning C4005: “DECLARE_ALIGNED_MATRIX_H”: 宏重定义
+                 d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\common\portab.h(84) : 参见“DECLARE_ALIGNED_MATRIX_H”的前一个定义
+         deblock.c
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\common\t264.h(36): warning C4005: “DECLARE_ALIGNED_MATRIX_H”: 宏重定义
+                 d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\common\portab.h(84) : 参见“DECLARE_ALIGNED_MATRIX_H”的前一个定义
+         dct.c
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\common\t264.h(36): warning C4005: “DECLARE_ALIGNED_MATRIX_H”: 宏重定义
+                 d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\common\portab.h(84) : 参见“DECLARE_ALIGNED_MATRIX_H”的前一个定义
+         cavlc.c
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\common\t264.h(36): warning C4005: “DECLARE_ALIGNED_MATRIX_H”: 宏重定义
+                 d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\common\portab.h(84) : 参见“DECLARE_ALIGNED_MATRIX_H”的前一个定义
+         cabac_engine.c
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\common\t264.h(36): warning C4005: “DECLARE_ALIGNED_MATRIX_H”: 宏重定义
+                 d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\common\portab.h(84) : 参见“DECLARE_ALIGNED_MATRIX_H”的前一个定义
+         cabac.c
+         正在生成代码...
+         正在编译...
+         block.c
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\common\t264.h(36): warning C4005: “DECLARE_ALIGNED_MATRIX_H”: 宏重定义
+                 d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\common\portab.h(84) : 参见“DECLARE_ALIGNED_MATRIX_H”的前一个定义
+         正在生成代码...
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(1151,5): warning MSB8012: TargetPath(D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\build\vc71\..\bin\t264lib.lib) 与 Library 的 OutputFile 属性值(D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\build\bin\t264libd.lib)不匹配。这可能导致项目生成不正确。若要更正此问题，请确保 $(OutDir)、$(TargetName) 和 $(TargetExt) 属性值与 %(Lib.OutputFile) 中指定的值匹配。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(1153,5): warning MSB8012: TargetName(t264lib) 与 Library 的 OutputFile 属性值(t264libd)不匹配。这可能导致项目生成不正确。若要更正此问题，请确保 $(OutDir)、$(TargetName) 和 $(TargetExt) 属性值与 %(Lib.OutputFile) 中指定的值匹配。
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"..\bin\t264libd.lib" /NOLOGO Debug\lib\cpu.obj
+         Debug\lib\dct_sse2.obj
+         Debug\lib\interpolate_sse2.obj
+         Debug\lib\sad.obj
+         Debug\lib\utility_mmx.obj
+         Debug\lib\block.obj
+         Debug\lib\cabac.obj
+         Debug\lib\cabac_engine.obj
+         Debug\lib\cavlc.obj
+         Debug\lib\dct.obj
+         Debug\lib\deblock.obj
+         Debug\lib\dec_cabac.obj
+         Debug\lib\dec_cavlc.obj
+         Debug\lib\estimation.obj
+         Debug\lib\inter.obj
+         Debug\lib\inter_b.obj
+         Debug\lib\interpolate.obj
+         Debug\lib\intra.obj
+         Debug\lib\predict.obj
+         Debug\lib\ratecontrol.obj
+         Debug\lib\rbsp.obj
+         Debug\lib\stat.obj
+         Debug\lib\T264dec.obj
+         Debug\lib\t264enc.obj
+         Debug\lib\typedecision.obj
+         Debug\lib\utility.obj
+         t264lib.vcxproj -> D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\build\vc71\..\bin\t264lib.lib
+       FinalizeBuildStatus:
+         正在删除文件“Debug\lib\t264lib.unsuccessfulbuild”。
+         正在对“Debug\lib\t264lib.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\build\vc71\t264lib.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:04.43

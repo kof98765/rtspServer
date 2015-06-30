@@ -1,0 +1,40 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectDir="E:\avc-0.14\avc\build\TiDM642\"
+ProjectType=Executable
+CPUFamily=TMS320C64XX
+Tool="Compiler"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Project Dependencies]
+Source="T264lib.pjt"
+
+["T264lib.pjt" Settings]
+MatchConfigName=true
+
+[Source Files]
+Source="..\..\encoder\T264.c"
+Source="T264.cmd"
+
+["Compiler" Settings: "Debug"]
+Options=-g -q -fr"E:\avc-0.14\avc\build\TiDM642\Debug" -i"../common" -i"../decoder" -i"../encoder" -i"../encoder/plugins" -i"../../common" -d"_DEBUG" -d"_TI_DM642" -mv6400
+
+["Compiler" Settings: "Release"]
+Options=-q -o3 -fr"E:\avc-0.14\avc\build\TiDM642\Release" -i"../common" -i"../decoder" -i"../encoder" -i"../encoder/plugins" -i"../../common" -d"_TI_DM642" -mt -mv6400
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v6x
+
+["DspBiosBuilder" Settings: "Release"]
+Options=-v6x
+
+["Linker" Settings: "Debug"]
+Options=-q -c -m".\Debug\T264.map" -o".\Debug\T264.out" -w -x
+
+["Linker" Settings: "Release"]
+Options=-q -c -m".\Release\T264.map" -o".\Release\T264.out" -w -x
+

@@ -1,0 +1,8 @@
+将文件内文件放入环境目录下即可
+如：mingw/bin
+
+lib.exe link.exe mspdb60.dll 来自VC6
+使用方法
+pexports libxxx.dll > libxxx.def 
+lib /machine:ix86 /def:libxxx.def
+最后会生成对应libxxx.lib

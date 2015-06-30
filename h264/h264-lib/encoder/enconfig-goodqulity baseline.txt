@@ -1,0 +1,51 @@
+4	# version; recommend for fast speed parameter
+352	# width
+288	# height
+16	# search x
+16	# search y
+300	# total frame number
+300	# i intervals
+300	# idr intervals
+1	# b frame number between 2 p-frame(0, 1, 2)
+3	# Number of previous frames used for inter motion search(1 - 4)
+0	# enable rate control
+200000	# bps
+30	# framerate(rc only)
+30	# init i,p qp, if NOT used fixed qp mode it is just the first i&p qp, 0 means auto select the first i&p qp(do not suggest)
+0	# min qp
+51	# max qp
+1	# enable psnr
+0	# disable_deblock_filter
+2	# aspect_ratio, 2 means 720 * 576 4:3
+1	# video_format, 1 means pal
+4	# luma_coeff_cost, default 4, min qp please decrease this value(< 0 disable)
+0	# USE_INTRA16x16
+1	# USE_INTRA4x4
+1	# USE_INTRAININTER
+1	# USE_HALFPEL
+1	# USE_QUARTPEL
+1	# USE_SUBBLOCK
+0	# USE_FULLSEARCH
+1	# USE_DIAMONDSEACH
+1	# USE_FORCEBLOCKSIZE
+0	# USE_FASTINTERPOLATE
+1	# USE_SAD
+1	# USE_EXTRASUBPELSEARCH
+1	# USE_SCENEDETECT
+#1	# SEARCH_16x16P
+1	# SEARCH_16x8P
+1	# SEARCH_8x16P
+1	# SEARCH_8x8P
+1	# SEARCH_8x4P
+1	# SEARCH_4x8P
+1	# SEARCH_4x4P
+#1	# SEARCH_16x16B, always valid
+1	# SEARCH_16x8B
+1	# SEARCH_8x16B
+0	# SEARCH_8x8B
+0	# T264_CPU_FORCE = 1
+1	# CABAC
+H:\Downloads\TestSeq\foreman_cif.yuv	# src file
+H:\Downloads\TestSeq\test1.264		# out file
+H:\Downloads\TestSeq\1.yuv		# rec file
+

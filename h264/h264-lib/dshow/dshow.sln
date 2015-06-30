@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dshow", "dshow.vcproj", "{926B5BC2-6374-456F-B529-154227FB59AB}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "t264lib", "..\build\vc71\t264lib.vcproj", "{70757007-324B-4331-84AA-AC29103ABC28}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{926B5BC2-6374-456F-B529-154227FB59AB}.Debug.ActiveCfg = Debug|Win32
+		{926B5BC2-6374-456F-B529-154227FB59AB}.Debug.Build.0 = Debug|Win32
+		{926B5BC2-6374-456F-B529-154227FB59AB}.Release.ActiveCfg = Release|Win32
+		{926B5BC2-6374-456F-B529-154227FB59AB}.Release.Build.0 = Release|Win32
+		{70757007-324B-4331-84AA-AC29103ABC28}.Debug.ActiveCfg = Debug|Win32
+		{70757007-324B-4331-84AA-AC29103ABC28}.Debug.Build.0 = Debug|Win32
+		{70757007-324B-4331-84AA-AC29103ABC28}.Release.ActiveCfg = Release|Win32
+		{70757007-324B-4331-84AA-AC29103ABC28}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

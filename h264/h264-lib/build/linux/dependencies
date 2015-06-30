@@ -1,0 +1,132 @@
+../obj/cabac.o: ../../encoder/cabac.c
+../obj/cavlc.o: ../../encoder/cavlc.c ../../common/T264.h \
+ ../../common/portab.h ../../common/config.h ../../encoder/vlc.h \
+ ../../common/bitstream.h ../../encoder/inter.h
+../obj/display.o: ../../encoder/display.c ../../encoder/display.h
+../obj/dither.o: ../../encoder/dither.c ../../encoder/display.h
+../obj/estimation.o: ../../encoder/estimation.c \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/stdio.h \
+ ../../common/T264.h ../../common/portab.h ../../common/config.h \
+ ../../encoder/estimation.h \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/memory.h \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/assert.h \
+ ../../common/bitstream.h ../../encoder/inter.h
+../obj/inter_b.o: ../../encoder/inter_b.c ../../common/portab.h \
+ ../../common/config.h \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/stdio.h \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/memory.h \
+ ../../common/T264.h ../../encoder/inter.h ../../encoder/inter_b.h \
+ ../../encoder/intra.h ../../encoder/estimation.h \
+ ../../common/utility.h ../../encoder/interpolate.h \
+ ../../common/bitstream.h ../../encoder/../decoder/block.h
+../obj/inter.o: ../../encoder/inter.c ../../common/portab.h \
+ ../../common/config.h \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/stdio.h \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/memory.h \
+ ../../common/T264.h ../../encoder/inter.h ../../encoder/intra.h \
+ ../../encoder/estimation.h ../../common/utility.h \
+ ../../encoder/interpolate.h ../../common/bitstream.h
+../obj/interpolate.o: ../../encoder/interpolate.c \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/stdio.h \
+ ../../common/T264.h ../../common/portab.h ../../common/config.h \
+ ../../encoder/interpolate.h ../../common/bitstream.h
+../obj/intra.o: ../../encoder/intra.c ../../common/portab.h \
+ ../../common/config.h \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/stdio.h \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/memory.h \
+ ../../common/T264.h ../../encoder/intra.h ../../common/utility.h \
+ ../../encoder/cavlc.h ../../common/bitstream.h
+../obj/predict.o: ../../encoder/predict.c ../../common/portab.h \
+ ../../common/config.h ../../encoder/predict.h
+../obj/rbsp.o: ../../encoder/rbsp.c \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/stdio.h \
+ ../../common/T264.h ../../common/portab.h ../../common/config.h \
+ ../../common/bitstream.h ../../encoder/rbsp.h \
+ ../../common/cabac_engine.h
+../obj/T264.o: ../../encoder/T264.c ../../common/config.h \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/stdio.h \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/sys/timeb.h \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/time.h \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/stdlib.h \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/memory.h \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/math.h \
+ ../../common/T264.h ../../common/portab.h ../../common/utility.h
+../obj/t264enc.o: ../../encoder/t264enc.c ../../common/T264.h \
+ ../../common/portab.h ../../common/config.h \
+ ../../common/cabac_engine.h ../../common/bitstream.h \
+ ../../encoder/inter.h \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/memory.h \
+ ../../common/utility.h ../../encoder/intra.h ../../encoder/cavlc.h \
+ ../../encoder/inter_b.h ../../encoder/interpolate.h \
+ ../../encoder/estimation.h ../../common/deblock.h \
+ ../../encoder/plugins/ratecontrol.h ../../encoder/plugins/stat.h \
+ ../../encoder/sse2/sse2.h \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/math.h \
+ ../../common/dct.h ../../encoder/predict.h ../../encoder/rbsp.h \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/assert.h \
+ ../../encoder/typedecision.h
+../obj/typedecision.o: ../../encoder/typedecision.c ../../common/T264.h \
+ ../../common/portab.h ../../common/config.h ../../common/bitstream.h \
+ ../../encoder/typedecision.h ../../encoder/estimation.h
+../obj/yuv2rgb.o: ../../encoder/yuv2rgb.c ../../encoder/display.h
+../obj/yuvrgb24.o: ../../encoder/yuvrgb24.c ../../encoder/display.h
+../obj/block.o: ../../decoder/block.c \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/stdio.h \
+ ../../common/T264.h ../../common/portab.h ../../common/config.h \
+ ../../common/utility.h \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/memory.h \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/assert.h \
+ ../../decoder/block.h
+../obj/dec_cabac.o: ../../decoder/dec_cabac.c ../../common/T264.h \
+ ../../common/portab.h ../../common/config.h \
+ ../../common/cabac_engine.h ../../common/bitstream.h \
+ ../../encoder/inter.h ../../common/utility.h ../../encoder/inter_b.h
+../obj/dec_cavlc.o: ../../decoder/dec_cavlc.c \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/stdio.h \
+ ../../common/T264.h ../../common/portab.h ../../common/config.h \
+ ../../common/bitstream.h ../../common/utility.h \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/memory.h \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/assert.h \
+ ../../encoder/cavlc.h ../../encoder/inter.h ../../encoder/inter_b.h
+../obj/T264dec.o: ../../decoder/T264dec.c ../../common/config.h \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/stdio.h \
+ ../../common/T264.h ../../common/portab.h ../../common/bitstream.h \
+ ../../common/utility.h \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/memory.h \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/assert.h \
+ ../../encoder/sse2/sse2.h ../../encoder/interpolate.h \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/math.h \
+ ../../common/dct.h ../../decoder/dec_cavlc.h ../../common/deblock.h \
+ ../../decoder/block.h ../../common/cabac_engine.h \
+ ../../decoder/dec_cabac.h ../../encoder/inter.h
+../obj/ratecontrol.o: ../../encoder/plugins/ratecontrol.c \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/stdio.h \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/stdlib.h \
+ ../../common/T264.h ../../common/portab.h ../../common/config.h \
+ ../../encoder/plugins/ratecontrol.h \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/math.h \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/memory.h
+../obj/stat.o: ../../encoder/plugins/stat.c \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/stdio.h \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/stdlib.h \
+ ../../common/T264.h ../../common/portab.h ../../common/config.h \
+ ../../encoder/plugins/stat.h \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/math.h \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/memory.h \
+ ../../common/deblock.h
+../obj/cabac_engine.o: ../../common/cabac_engine.c \
+ ../../common/cabac_engine.h ../../common/T264.h ../../common/portab.h \
+ ../../common/config.h ../../common/bitstream.h
+../obj/dct.o: ../../common/dct.c \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/stdio.h \
+ ../../common/T264.h ../../common/portab.h ../../common/config.h
+../obj/deblock.o: ../../common/deblock.c \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/stdio.h \
+ ../../common/T264.h ../../common/portab.h ../../common/config.h \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/assert.h
+../obj/utility.o: ../../common/utility.c \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/stdio.h \
+ ../../common/portab.h ../../common/config.h \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/malloc.h \
+ ../../common/utility.h \
+ /usr/local/arm/2.95.3/lib/gcc-lib/arm-linux/2.95.3/../../../../arm-linux/include/memory.h

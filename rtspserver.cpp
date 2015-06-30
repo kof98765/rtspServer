@@ -100,10 +100,10 @@ void RtspServer::tcpDate()
 
     if (QTcpSocket* dec = dynamic_cast<QTcpSocket*>(sender()))
     {
-       qDebug()<<"start";
+       qDebug()<<"{";
       QString buf=dec->readAll();
       qDebug()<<buf;
-      qDebug()<<"end";
+      qDebug()<<"}";
       //qDebug()<<dec->readAll();
       if(buf.contains("OPTIONS"))
       {
@@ -111,13 +111,13 @@ void RtspServer::tcpDate()
         if(buf.mid(buf.indexOf("CSeq: ")+6,1).toInt()!=2)
             return;
 
-        dec->write("RTSP/1.0 200 OK\r\n",17);
-        dec->write("CSeq: 2\r\n",9);
+        dec->write("RTSP/1.0 200 OK\r\n");
+        dec->write("CSeq: 2\r\n");
         dec->write("{\"Public: OPTIONS, DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE\"}\r\n",61);
         dec->write("\r\n\r\n");
       }
 
-      if(buf.contains("DESCRIBE")|buf.contains("OPTIONS"))
+      if(buf.contains("DESCRIBE"))
       {
          sdpFile->setFileName("rtp.sdp");
          sdpFile->open(QIODevice::ReadOnly);
@@ -139,33 +139,7 @@ void RtspServer::tcpDate()
 
                    //表示回应的是sdp信息
         sdpFile->close();
-        //  dec->write(sdp->toUtf8().data());
-        //  dec->write("\r\n\r\n");
 
-         // QString describe="RTSP/1.0 200 OK\r\n \
-                             CSeq: 3\r\n \
-          Date: Mon, Jun 29 2015 00:54:24 GMT\r\n \
-          Content-Base: rtsp://127.0.0.1:5500/video/ \
-          Content-Type: application/sdp\r\n \
-          Content-Length: 509\r\n\r\n \
-          v=0\r\n \
-          o=- 1435539260860419 1 IN IP4 127.0.0.1\r\n \
-          s=Session streamed by \"testOnDemandRTSPServer\"\r\n \
-          i=h264ESVideoTest\r\n \
-          t=0 0\r\n \
-          a=tool:LIVE555 Streaming Media v2014.07.25 \r\n \
-          a=type:broadcast\r\n \
-          a=control:* \r\n \
-          a=range:npt=0-\r\n \
-          a=x-qt-text-nam:Session streamed by \"testOnDemandRTSPServer\"\r\n \
-          a=x-qt-text-inf:h264ESVideoTest\r\n \
-          m=video 0 RTP/AVP 96\r\n \
-          c=IN IP4 0.0.0.0\r\n \
-          b=AS:1000\r\n \
-          a=rtpmap:96 H264/90000\r\n \
-          a=fmtp:96 packetization-mode=1;profile-level-id=42001E;sprop-parameter-sets=J0IAHo2NQFAemBJAIA==,KM4ECIg=\r\n \
-          a=control:track1\r\n\r\n";
-          //dec->write(describe.toUtf8().data());
 
       }
     }

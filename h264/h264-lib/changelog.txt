@@ -1,0 +1,54 @@
+[2005-3-29]
+New function:
+1, B frame deblock. [decoder]
+2, Add sse2/sse/mmx support for Pixel_avg. [encoder/decoder]
+3, rewrite sad + interpolation asm. [encoder]
+4, cabac encoder and decoder support.
+5, rewrite deblock for speed.
+6, rewrite p skip detection routine. [encoder]
+7, scene detection added. [encoder]
+8, dshow wrapper update.
+
+Fixed bugs:
+1, bitstream rbsp_training_bits bug. [encoder]
+2, ratecontrol for b slice. [encoder]
+3, fixed direct mode for b slice. [encoder]
+4, bitstream decoder may be error between emulation prevention code. [decoder]
+5, reorder frames bug. [decoder]
+
+[2004-12-15]
+1, i16x16 decoder support
+2, dshow encoder + decoder + splitter support
+
+[2004-12-3]
+1, new fast interpolation introduced
+2, p slice decoder complete
+3, port to linux
+
+[2004-11-17]
+1, b slice 16x8 + 8x16 introduced
+2, multiple previous frames used for inter introduced(speed dropped)
+
+[2004-11-9]
+1, introduce new flag: USE_INTRAININTER, when it is off, speed may be up 5 fps(3ks chenm)
+2, redesign plugin structure, stat(include psnr now can display by set the enable psnr in
+   enconfig.txt)
+3, change the header file t264.h and then it is friendly to use maybe
+4, change the directory layout, decoder will import
+
+[2004-11-6]
+b frame partial implement
+
+[2004-10-26]
+1, subpel search increase from 4 pel to 8 pel
+2, ratecontrol can be enble by set enable rate control to 1 in enconfig.txt
+   in T264.exe or set bitrate great than 0 in T264 dshow encoder.
+
+[2004-10-22]
+1, optimized deblock filter
+2, optimized detect p-skip subroutine
+3, add i4x4 mode3-8, except mode 3 & 7
+4, add interpolate_h/v_sse2, gain minor speed
+5, update ratecontrol mad model, but still not satisfied
+6, update me thresholds, increase the compression ratio
+7, limit ratecontrol min/max qp to prevent the quality decrease fearfully

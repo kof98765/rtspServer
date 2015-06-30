@@ -1,0 +1,169 @@
+The system is: Windows - 6.1 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/bin/cl.exe 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 16.00.30319.01 版
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+CMakeCCompilerId.c
+Microsoft (R) Incremental Linker Version 10.00.30319.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCCompilerId.exe 
+CMakeCCompilerId.obj 
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+
+The C compiler identification is MSVC, found in "E:/opencv/rtp/jrtplib-3.9.1/build/CMakeFiles/3.0.2/CompilerIdC/CMakeCCompilerId.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/bin/cl.exe 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 16.00.30319.01 版
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+CMakeCXXCompilerId.cpp
+Microsoft (R) Incremental Linker Version 10.00.30319.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCXXCompilerId.exe 
+CMakeCXXCompilerId.obj 
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+
+The CXX compiler identification is MSVC, found in "E:/opencv/rtp/jrtplib-3.9.1/build/CMakeFiles/3.0.2/CompilerIdCXX/CMakeCXXCompilerId.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: E:/opencv/rtp/jrtplib-3.9.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"nmake" "/NOLOGO" "cmTryCompileExec2931099185\fast"
+	"C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\nmake.exe" -f CMakeFiles\cmTryCompileExec2931099185.dir\build.make /nologo -L                  CMakeFiles\cmTryCompileExec2931099185.dir\build
+	F:\soft\cmake-3.0.2-win32-x86\bin\cmake.exe -E cmake_progress_report E:\opencv\rtp\jrtplib-3.9.1\build\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2931099185.dir/testCCompiler.c.obj
+	C:\PROGRA~2\MICROS~2.0\VC\bin\cl.exe  @C:\Users\ADMINI~1\AppData\Local\Temp\nm7BA5.tmp
+testCCompiler.c
+Linking C executable cmTryCompileExec2931099185.exe
+	F:\soft\cmake-3.0.2-win32-x86\bin\cmake.exe -E vs_link_exe C:\PROGRA~2\MICROS~2.0\VC\bin\link.exe /nologo @CMakeFiles\cmTryCompileExec2931099185.dir\objects1.rsp @C:\Users\ADMINI~1\AppData\Local\Temp\nm7D5B.tmp
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: E:/opencv/rtp/jrtplib-3.9.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"nmake" "/NOLOGO" "cmTryCompileExec495176518\fast"
+	"C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\nmake.exe" -f CMakeFiles\cmTryCompileExec495176518.dir\build.make /nologo -L                  CMakeFiles\cmTryCompileExec495176518.dir\build
+	F:\soft\cmake-3.0.2-win32-x86\bin\cmake.exe -E cmake_progress_report E:\opencv\rtp\jrtplib-3.9.1\build\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec495176518.dir/CMakeCCompilerABI.c.obj
+	C:\PROGRA~2\MICROS~2.0\VC\bin\cl.exe  @C:\Users\ADMINI~1\AppData\Local\Temp\nm8611.tmp
+CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec495176518.exe
+	F:\soft\cmake-3.0.2-win32-x86\bin\cmake.exe -E vs_link_exe C:\PROGRA~2\MICROS~2.0\VC\bin\link.exe /nologo @CMakeFiles\cmTryCompileExec495176518.dir\objects1.rsp @C:\Users\ADMINI~1\AppData\Local\Temp\nm86DC.tmp
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: E:/opencv/rtp/jrtplib-3.9.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"nmake" "/NOLOGO" "cmTryCompileExec3036826022\fast"
+	"C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\nmake.exe" -f CMakeFiles\cmTryCompileExec3036826022.dir\build.make /nologo -L                  CMakeFiles\cmTryCompileExec3036826022.dir\build
+	F:\soft\cmake-3.0.2-win32-x86\bin\cmake.exe -E cmake_progress_report E:\opencv\rtp\jrtplib-3.9.1\build\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3036826022.dir/testCXXCompiler.cxx.obj
+	C:\PROGRA~2\MICROS~2.0\VC\bin\cl.exe  @C:\Users\ADMINI~1\AppData\Local\Temp\nm8CB5.tmp
+testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec3036826022.exe
+	F:\soft\cmake-3.0.2-win32-x86\bin\cmake.exe -E vs_link_exe C:\PROGRA~2\MICROS~2.0\VC\bin\link.exe /nologo @CMakeFiles\cmTryCompileExec3036826022.dir\objects1.rsp @C:\Users\ADMINI~1\AppData\Local\Temp\nm8D90.tmp
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: E:/opencv/rtp/jrtplib-3.9.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"nmake" "/NOLOGO" "cmTryCompileExec2501589786\fast"
+	"C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\nmake.exe" -f CMakeFiles\cmTryCompileExec2501589786.dir\build.make /nologo -L                  CMakeFiles\cmTryCompileExec2501589786.dir\build
+	F:\soft\cmake-3.0.2-win32-x86\bin\cmake.exe -E cmake_progress_report E:\opencv\rtp\jrtplib-3.9.1\build\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2501589786.dir/CMakeCXXCompilerABI.cpp.obj
+	C:\PROGRA~2\MICROS~2.0\VC\bin\cl.exe  @C:\Users\ADMINI~1\AppData\Local\Temp\nm934A.tmp
+CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec2501589786.exe
+	F:\soft\cmake-3.0.2-win32-x86\bin\cmake.exe -E vs_link_exe C:\PROGRA~2\MICROS~2.0\VC\bin\link.exe /nologo @CMakeFiles\cmTryCompileExec2501589786.dir\objects1.rsp @C:\Users\ADMINI~1\AppData\Local\Temp\nm9435.tmp
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: E:/opencv/rtp/jrtplib-3.9.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"nmake" "/NOLOGO" "cmTryCompileExec3841054939\fast"
+	"C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\nmake.exe" -f CMakeFiles\cmTryCompileExec3841054939.dir\build.make /nologo -L                  CMakeFiles\cmTryCompileExec3841054939.dir\build
+	F:\soft\cmake-3.0.2-win32-x86\bin\cmake.exe -E cmake_progress_report E:\opencv\rtp\jrtplib-3.9.1\build\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3841054939.dir/CheckIncludeFile.c.obj
+	C:\PROGRA~2\MICROS~2.0\VC\bin\cl.exe  @C:\Users\ADMINI~1\AppData\Local\Temp\nmA2F3.tmp
+CheckIncludeFile.c
+Linking C executable cmTryCompileExec3841054939.exe
+	F:\soft\cmake-3.0.2-win32-x86\bin\cmake.exe -E vs_link_exe C:\PROGRA~2\MICROS~2.0\VC\bin\link.exe /nologo @CMakeFiles\cmTryCompileExec3841054939.dir\objects1.rsp @C:\Users\ADMINI~1\AppData\Local\Temp\nmA3AF.tmp
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: E:/opencv/rtp/jrtplib-3.9.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"nmake" "/NOLOGO" "cmTryCompileExec1043759201\fast"
+	"C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\nmake.exe" -f CMakeFiles\cmTryCompileExec1043759201.dir\build.make /nologo -L                  CMakeFiles\cmTryCompileExec1043759201.dir\build
+	F:\soft\cmake-3.0.2-win32-x86\bin\cmake.exe -E cmake_progress_report E:\opencv\rtp\jrtplib-3.9.1\build\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1043759201.dir/CheckIncludeFile.c.obj
+	C:\PROGRA~2\MICROS~2.0\VC\bin\cl.exe  @C:\Users\ADMINI~1\AppData\Local\Temp\nmA959.tmp
+CheckIncludeFile.c
+Linking C executable cmTryCompileExec1043759201.exe
+	F:\soft\cmake-3.0.2-win32-x86\bin\cmake.exe -E vs_link_exe C:\PROGRA~2\MICROS~2.0\VC\bin\link.exe /nologo @CMakeFiles\cmTryCompileExec1043759201.dir\objects1.rsp @C:\Users\ADMINI~1\AppData\Local\Temp\nmAA25.tmp
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: E:/opencv/rtp/jrtplib-3.9.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"nmake" "/NOLOGO" "cmTryCompileExec1300583639\fast"
+	"C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\nmake.exe" -f CMakeFiles\cmTryCompileExec1300583639.dir\build.make /nologo -L                  CMakeFiles\cmTryCompileExec1300583639.dir\build
+	F:\soft\cmake-3.0.2-win32-x86\bin\cmake.exe -E cmake_progress_report E:\opencv\rtp\jrtplib-3.9.1\build\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1300583639.dir/CheckIncludeFile.c.obj
+	C:\PROGRA~2\MICROS~2.0\VC\bin\cl.exe  @C:\Users\ADMINI~1\AppData\Local\Temp\nmB02C.tmp
+CheckIncludeFile.c
+Linking C executable cmTryCompileExec1300583639.exe
+	F:\soft\cmake-3.0.2-win32-x86\bin\cmake.exe -E vs_link_exe C:\PROGRA~2\MICROS~2.0\VC\bin\link.exe /nologo @CMakeFiles\cmTryCompileExec1300583639.dir\objects1.rsp @C:\Users\ADMINI~1\AppData\Local\Temp\nmB108.tmp
+
+
+Determining size of unsigned short passed with the following output:
+Change Dir: E:/opencv/rtp/jrtplib-3.9.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"nmake" "/NOLOGO" "cmTryCompileExec199441960\fast"
+	"C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\nmake.exe" -f CMakeFiles\cmTryCompileExec199441960.dir\build.make /nologo -L                  CMakeFiles\cmTryCompileExec199441960.dir\build
+	F:\soft\cmake-3.0.2-win32-x86\bin\cmake.exe -E cmake_progress_report E:\opencv\rtp\jrtplib-3.9.1\build\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec199441960.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.obj
+	C:\PROGRA~2\MICROS~2.0\VC\bin\cl.exe  @C:\Users\ADMINI~1\AppData\Local\Temp\nmB6A2.tmp
+CMAKE_SIZEOF_UNSIGNED_SHORT.c
+Linking C executable cmTryCompileExec199441960.exe
+	F:\soft\cmake-3.0.2-win32-x86\bin\cmake.exe -E vs_link_exe C:\PROGRA~2\MICROS~2.0\VC\bin\link.exe /nologo @CMakeFiles\cmTryCompileExec199441960.dir\objects1.rsp @C:\Users\ADMINI~1\AppData\Local\Temp\nmB77D.tmp
+
+
+Performing C++ SOURCE FILE Test JRTPLIB_STDINT succeded with the following output:
+Change Dir: E:/opencv/rtp/jrtplib-3.9.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"nmake" "/NOLOGO" "cmTryCompileExec2664667588\fast"
+	"C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\nmake.exe" -f CMakeFiles\cmTryCompileExec2664667588.dir\build.make /nologo -L                  CMakeFiles\cmTryCompileExec2664667588.dir\build
+	F:\soft\cmake-3.0.2-win32-x86\bin\cmake.exe -E cmake_progress_report E:\opencv\rtp\jrtplib-3.9.1\build\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2664667588.dir/src.cxx.obj
+	C:\PROGRA~2\MICROS~2.0\VC\bin\cl.exe  @C:\Users\ADMINI~1\AppData\Local\Temp\nmF48C.tmp
+src.cxx
+Linking CXX executable cmTryCompileExec2664667588.exe
+	F:\soft\cmake-3.0.2-win32-x86\bin\cmake.exe -E vs_link_exe C:\PROGRA~2\MICROS~2.0\VC\bin\link.exe /nologo @CMakeFiles\cmTryCompileExec2664667588.dir\objects1.rsp @C:\Users\ADMINI~1\AppData\Local\Temp\nmF596.tmp
+
+Source file was:
+#include <stdint.h>
+#include <sys/types.h>
+int main(void) { size_t a = 0 ; size_t b = a; uint32_t x = 0; uint32_t y = x; return 0; }

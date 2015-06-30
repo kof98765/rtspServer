@@ -1,0 +1,86 @@
+Determining if the include file sys/filio.h exists failed with the following output:
+Change Dir: E:/opencv/rtp/jrtplib-3.9.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"nmake" "/NOLOGO" "cmTryCompileExec690782379\fast"
+	"C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\nmake.exe" -f CMakeFiles\cmTryCompileExec690782379.dir\build.make /nologo -L                  CMakeFiles\cmTryCompileExec690782379.dir\build
+	F:\soft\cmake-3.0.2-win32-x86\bin\cmake.exe -E cmake_progress_report E:\opencv\rtp\jrtplib-3.9.1\build\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec690782379.dir/CheckIncludeFile.cxx.obj
+	C:\PROGRA~2\MICROS~2.0\VC\bin\cl.exe  @C:\Users\ADMINI~1\AppData\Local\Temp\nm9AB9.tmp
+CheckIncludeFile.cxx
+E:\opencv\rtp\jrtplib-3.9.1\build\CMakeFiles\CMakeTmp\CheckIncludeFile.cxx(1) : fatal error C1083: 无法打开包括文件:“sys/filio.h”: No such file or directory
+NMAKE : fatal error U1077: “C:\PROGRA~2\MICROS~2.0\VC\bin\cl.exe”: 返回代码“0x2”
+Stop.
+NMAKE : fatal error U1077: “"C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\nmake.exe"”: 返回代码“0x2”
+Stop.
+
+
+Determining if the include file sys/sockio.h exists failed with the following output:
+Change Dir: E:/opencv/rtp/jrtplib-3.9.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"nmake" "/NOLOGO" "cmTryCompileExec4156337034\fast"
+	"C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\nmake.exe" -f CMakeFiles\cmTryCompileExec4156337034.dir\build.make /nologo -L                  CMakeFiles\cmTryCompileExec4156337034.dir\build
+	F:\soft\cmake-3.0.2-win32-x86\bin\cmake.exe -E cmake_progress_report E:\opencv\rtp\jrtplib-3.9.1\build\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec4156337034.dir/CheckIncludeFile.cxx.obj
+	C:\PROGRA~2\MICROS~2.0\VC\bin\cl.exe  @C:\Users\ADMINI~1\AppData\Local\Temp\nm9D77.tmp
+CheckIncludeFile.cxx
+E:\opencv\rtp\jrtplib-3.9.1\build\CMakeFiles\CMakeTmp\CheckIncludeFile.cxx(1) : fatal error C1083: 无法打开包括文件:“sys/sockio.h”: No such file or directory
+NMAKE : fatal error U1077: “C:\PROGRA~2\MICROS~2.0\VC\bin\cl.exe”: 返回代码“0x2”
+Stop.
+NMAKE : fatal error U1077: “"C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\nmake.exe"”: 返回代码“0x2”
+Stop.
+
+
+Determining if the include file ifaddrs.h exists failed with the following output:
+Change Dir: E:/opencv/rtp/jrtplib-3.9.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"nmake" "/NOLOGO" "cmTryCompileExec3575435946\fast"
+	"C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\nmake.exe" -f CMakeFiles\cmTryCompileExec3575435946.dir\build.make /nologo -L                  CMakeFiles\cmTryCompileExec3575435946.dir\build
+	F:\soft\cmake-3.0.2-win32-x86\bin\cmake.exe -E cmake_progress_report E:\opencv\rtp\jrtplib-3.9.1\build\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3575435946.dir/CheckIncludeFile.cxx.obj
+	C:\PROGRA~2\MICROS~2.0\VC\bin\cl.exe  @C:\Users\ADMINI~1\AppData\Local\Temp\nmA045.tmp
+CheckIncludeFile.cxx
+E:\opencv\rtp\jrtplib-3.9.1\build\CMakeFiles\CMakeTmp\CheckIncludeFile.cxx(1) : fatal error C1083: 无法打开包括文件:“ifaddrs.h”: No such file or directory
+NMAKE : fatal error U1077: “C:\PROGRA~2\MICROS~2.0\VC\bin\cl.exe”: 返回代码“0x2”
+Stop.
+NMAKE : fatal error U1077: “"C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\nmake.exe"”: 返回代码“0x2”
+Stop.
+
+
+Determining if the system is big endian passed with the following output:
+Change Dir: E:/opencv/rtp/jrtplib-3.9.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"nmake" "/NOLOGO" "cmTryCompileExec3292190218\fast"
+	"C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\nmake.exe" -f CMakeFiles\cmTryCompileExec3292190218.dir\build.make /nologo -L                  CMakeFiles\cmTryCompileExec3292190218.dir\build
+	F:\soft\cmake-3.0.2-win32-x86\bin\cmake.exe -E cmake_progress_report E:\opencv\rtp\jrtplib-3.9.1\build\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3292190218.dir/TestEndianess.c.obj
+	C:\PROGRA~2\MICROS~2.0\VC\bin\cl.exe  @C:\Users\ADMINI~1\AppData\Local\Temp\nmBD56.tmp
+TestEndianess.c
+Linking C executable cmTryCompileExec3292190218.exe
+	F:\soft\cmake-3.0.2-win32-x86\bin\cmake.exe -E vs_link_exe C:\PROGRA~2\MICROS~2.0\VC\bin\link.exe /nologo @CMakeFiles\cmTryCompileExec3292190218.dir\objects1.rsp @C:\Users\ADMINI~1\AppData\Local\Temp\nmBE41.tmp
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+

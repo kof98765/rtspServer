@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/jmutex.h
+jthreadconfig.h
+../src/jthreadconfig.h
+process.h
+-
+winsock2.h
+-
+windows.h
+-
+pthread.h
+-
+
+../src/jmutexautolock.h
+jthreadconfig.h
+../src/jthreadconfig.h
+jmutex.h
+../src/jmutex.h
+
+../src/jthread.h
+jthreadconfig.h
+../src/jthreadconfig.h
+jmutex.h
+../src/jmutex.h
+
+E:/opencv/rtp/jthread-1.3.1/src/win32/jmutex.cpp
+jmutex.h
+E:/opencv/rtp/jthread-1.3.1/src/win32/jmutex.h
+
+E:/opencv/rtp/jthread-1.3.1/src/win32/jthread.cpp
+jthread.h
+E:/opencv/rtp/jthread-1.3.1/src/win32/jthread.h
+jmutexautolock.h
+E:/opencv/rtp/jthread-1.3.1/src/win32/jmutexautolock.h
+process.h
+-
+
+src/jthreadconfig.h
+

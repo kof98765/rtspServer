@@ -1,0 +1,9 @@
+先安装cygwin32，再./configure --enable-shared --eanble-debug生成dll
+再通过dll生成lib文件
+./pexports\(all\)/pexports-0.46.exe libx264-142.dll >libx264.def
+./pexports\(all\)/lib.exe /machine:ix86 /def:libx264.def
+
+
+
+
+

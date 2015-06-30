@@ -1,0 +1,101 @@
+The system is: Windows - 6.1 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/bin/cl.exe 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 16.00.30319.01 版
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+CMakeCCompilerId.c
+Microsoft (R) Incremental Linker Version 10.00.30319.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCCompilerId.exe 
+CMakeCCompilerId.obj 
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+
+The C compiler identification is MSVC, found in "E:/opencv/rtp/jthread-1.3.1/build/CMakeFiles/3.0.2/CompilerIdC/CMakeCCompilerId.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/bin/cl.exe 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+用于 80x86 的 Microsoft (R) 32 位 C/C++ 优化编译器 16.00.30319.01 版
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+CMakeCXXCompilerId.cpp
+Microsoft (R) Incremental Linker Version 10.00.30319.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCXXCompilerId.exe 
+CMakeCXXCompilerId.obj 
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+
+The CXX compiler identification is MSVC, found in "E:/opencv/rtp/jthread-1.3.1/build/CMakeFiles/3.0.2/CompilerIdCXX/CMakeCXXCompilerId.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: E:/opencv/rtp/jthread-1.3.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"nmake" "/NOLOGO" "cmTryCompileExec181429848\fast"
+	"C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\nmake.exe" -f CMakeFiles\cmTryCompileExec181429848.dir\build.make /nologo -L                  CMakeFiles\cmTryCompileExec181429848.dir\build
+	F:\soft\cmake-3.0.2-win32-x86\bin\cmake.exe -E cmake_progress_report E:\opencv\rtp\jthread-1.3.1\build\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec181429848.dir/testCCompiler.c.obj
+	C:\PROGRA~2\MICROS~2.0\VC\bin\cl.exe  @C:\Users\ADMINI~1\AppData\Local\Temp\nmD77A.tmp
+testCCompiler.c
+Linking C executable cmTryCompileExec181429848.exe
+	F:\soft\cmake-3.0.2-win32-x86\bin\cmake.exe -E vs_link_exe C:\PROGRA~2\MICROS~2.0\VC\bin\link.exe /nologo @CMakeFiles\cmTryCompileExec181429848.dir\objects1.rsp @C:\Users\ADMINI~1\AppData\Local\Temp\nmD845.tmp
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: E:/opencv/rtp/jthread-1.3.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"nmake" "/NOLOGO" "cmTryCompileExec3827877564\fast"
+	"C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\nmake.exe" -f CMakeFiles\cmTryCompileExec3827877564.dir\build.make /nologo -L                  CMakeFiles\cmTryCompileExec3827877564.dir\build
+	F:\soft\cmake-3.0.2-win32-x86\bin\cmake.exe -E cmake_progress_report E:\opencv\rtp\jthread-1.3.1\build\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3827877564.dir/CMakeCCompilerABI.c.obj
+	C:\PROGRA~2\MICROS~2.0\VC\bin\cl.exe  @C:\Users\ADMINI~1\AppData\Local\Temp\nmDF27.tmp
+CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec3827877564.exe
+	F:\soft\cmake-3.0.2-win32-x86\bin\cmake.exe -E vs_link_exe C:\PROGRA~2\MICROS~2.0\VC\bin\link.exe /nologo @CMakeFiles\cmTryCompileExec3827877564.dir\objects1.rsp @C:\Users\ADMINI~1\AppData\Local\Temp\nmDFF3.tmp
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: E:/opencv/rtp/jthread-1.3.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"nmake" "/NOLOGO" "cmTryCompileExec49310907\fast"
+	"C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\nmake.exe" -f CMakeFiles\cmTryCompileExec49310907.dir\build.make /nologo -L                  CMakeFiles\cmTryCompileExec49310907.dir\build
+	F:\soft\cmake-3.0.2-win32-x86\bin\cmake.exe -E cmake_progress_report E:\opencv\rtp\jthread-1.3.1\build\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec49310907.dir/testCXXCompiler.cxx.obj
+	C:\PROGRA~2\MICROS~2.0\VC\bin\cl.exe  @C:\Users\ADMINI~1\AppData\Local\Temp\nmE5BC.tmp
+testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec49310907.exe
+	F:\soft\cmake-3.0.2-win32-x86\bin\cmake.exe -E vs_link_exe C:\PROGRA~2\MICROS~2.0\VC\bin\link.exe /nologo @CMakeFiles\cmTryCompileExec49310907.dir\objects1.rsp @C:\Users\ADMINI~1\AppData\Local\Temp\nmE697.tmp
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: E:/opencv/rtp/jthread-1.3.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"nmake" "/NOLOGO" "cmTryCompileExec2751236759\fast"
+	"C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\nmake.exe" -f CMakeFiles\cmTryCompileExec2751236759.dir\build.make /nologo -L                  CMakeFiles\cmTryCompileExec2751236759.dir\build
+	F:\soft\cmake-3.0.2-win32-x86\bin\cmake.exe -E cmake_progress_report E:\opencv\rtp\jthread-1.3.1\build\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2751236759.dir/CMakeCXXCompilerABI.cpp.obj
+	C:\PROGRA~2\MICROS~2.0\VC\bin\cl.exe  @C:\Users\ADMINI~1\AppData\Local\Temp\nmEC80.tmp
+CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec2751236759.exe
+	F:\soft\cmake-3.0.2-win32-x86\bin\cmake.exe -E vs_link_exe C:\PROGRA~2\MICROS~2.0\VC\bin\link.exe /nologo @CMakeFiles\cmTryCompileExec2751236759.dir\objects1.rsp @C:\Users\ADMINI~1\AppData\Local\Temp\nmED7A.tmp
+
+

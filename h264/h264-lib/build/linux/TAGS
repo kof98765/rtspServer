@@ -1,0 +1,1149 @@
+
+../../encoder/cabac.c,0
+
+../../encoder/cavlc.c,425
+static const uint8_t intra4x4_cbp_to_golomb[41,1444
+static const uint8_t inter_cbp_to_golomb[47,1698
+#define IS_DIRECT(IS_DIRECT72,2296
+#define BLOCK_INDEX_CHROMA_DC 73,2361
+#define BLOCK_INDEX_LUMA_DC 74,2399
+static __inline void eg_write_vlc(76,2439
+T264_mb_predict_intra4x4_mode(82,2598
+T264_mb_predict_non_zero_code(102,3021
+static void block_residual_write_cavlc(142,4081
+T264_macroblock_write_cavlc(338,9390
+
+../../encoder/display.c,1074
+unsigned long wpixel[77,2720
+static unsigned char *dithered_image;78,2746
+int expand 80,2787
+int quiet 81,2804
+int horizontal_size 82,2820
+int vertical_size 83,2848
+int coded_picture_width 84,2874
+int coded_picture_height 85,2906
+int ref_coded_picture_width 86,2939
+int chrom_width 87,3007
+int ref_chrom_width 88,3061
+int matrix_coefficients 89,3111
+unsigned char * clp 90,3141
+unsigned char * clp1 91,3170
+int convmat[92,3200
+static Display *display;107,3725
+static Window window;108,3751
+static GC gc;109,3774
+static int dpy_depth;110,3789
+XImage *ximage;112,3814
+unsigned char pixel[114,3833
+#define SH_MEM115,3860
+static int shmem_flag;129,4290
+static XShmSegmentInfo shminfo1,130,4314
+static XShmSegmentInfo shminfo1, shminfo2;130,4314
+static int gXErrorFlag;131,4358
+static int CompletionType 132,4383
+static int HandleXError 134,4418
+static void InstallXErrorHandler 143,4539
+static void DeInstallXErrorHandler 149,4641
+void init_display 159,4836
+void exit_display 507,15005
+static void display_image 526,15254
+void dither 573,16362
+
+../../encoder/dither.c,790
+EXTERN int horizontal_size,70,2489
+EXTERN int horizontal_size, vertical_size,70,2489
+EXTERN int horizontal_size, vertical_size, mb_width,70,2489
+EXTERN int horizontal_size, vertical_size, mb_width, mb_height;70,2489
+EXTERN int coded_picture_width,71,2554
+EXTERN int coded_picture_width, coded_picture_height;71,2554
+EXTERN int ref_coded_picture_width,72,2609
+EXTERN int ref_coded_picture_width, ref_coded_picture_height;72,2609
+EXTERN int chrom_width,73,2672
+EXTERN int chrom_width, chrom_height,73,2672
+EXTERN int chrom_width, chrom_height, blk_cnt;73,2672
+EXTERN int ref_chrom_width,74,2720
+EXTERN int ref_chrom_width, ref_chrom_height;74,2720
+static unsigned char ytab[77,2789
+static unsigned char uvtab[78,2834
+ ord4x4_dither_init 93,3167
+ ord4x4_dither_frame 127,3804
+
+../../encoder/estimation.c,241
+check_vec(36,1317
+T264_search(50,1571
+small_diamond_search(154,5096
+#define CHECK_CANDIDATE(CHECK_CANDIDATE181,5812
+square_diamond_search(216,7218
+diamond_search(289,9398
+T264_search_full(390,12077
+T264_spiral_search_full(445,14160
+
+../../encoder/inter_b.c,455
+T264_detect_direct_16x16(40,1439
+T264_mode_decision_interb_y(55,1691
+#define MINPOSITIVE(MINPOSITIVE233,7650
+T264_get_ref_idx(235,7755
+T264_try_get_col_zero_mv(256,8294
+T264_get_direct_mv(287,9244
+T264_mode_decision_inter_direct_16x16b(359,11046
+T264_mode_decision_inter_16x16b(372,11375
+T264_mode_decision_inter_16x8b(495,15446
+T264_mode_decision_inter_8x16b(606,19338
+T264_mode_decision_inter_8x8b(717,23187
+T264_encode_interb_uv(808,26444
+
+../../encoder/inter.c,894
+T264_predict_sad(39,1342
+T264_predict_mv(45,1478
+T264_predict_mv_skip(146,3980
+T264_median(169,4630
+copy_nvec(196,4983
+T264_inter_p16x16_mode_available(211,5281
+T264_inter_p8x8_mode_available(252,6254
+T264_get_pos_sad(308,7869
+T264_detect_pskip(352,9571
+T264_mode_decision_interp_y(592,18587
+    typedef uint32_t (*p16x16_function_t)p16x16_function_t605,18869
+        typedef uint32_t (*p8x8_function_t)p8x8_function_t644,19809
+get_pmv(801,27501
+T264_mode_decision_inter_16x16p(832,28621
+T264_mode_decision_inter_16x8p(913,31222
+T264_mode_decision_inter_8x16p(965,32792
+T264_mode_decision_inter_8x8p(1015,34329
+T264_mode_decision_inter_8x4p(1051,35696
+T264_mode_decision_inter_4x8p(1098,37684
+T264_mode_decision_inter_4x4p(1146,39527
+T264_encode_inter_16x16p(1216,42278
+T264_encode_inter_y(1306,45057
+T264_transform_inter_uv(1313,45220
+T264_encode_inter_uv(1400,47594
+
+../../encoder/interpolate.c,262
+T264_quarter_pixel_search(31,1180
+T264_pia_u_c(228,9017
+#define PIAFUNC(PIAFUNC245,9422
+PIAFUNC(248,9658
+tapfilter_h(279,10424
+interpolate_halfpel_h_c(285,10536
+tapfilter_v(303,10988
+interpolate_halfpel_v_c(309,11153
+interpolate_halfpel_hv_c(328,11636
+
+../../encoder/inter_test.c,770
+T264_predict_mv(54,2056
+T264_median(149,4298
+copy_nvec(176,4651
+T264_inter_p16x16_mode_available(191,4949
+T264_inter_p8x8_mode_available(232,5974
+T264_mode_decision_inter_y(288,7590
+    typedef uint32_t (*p16x16_function_t)p16x16_function_t301,7882
+        typedef uint32_t (*p8x8_function_t)p8x8_function_t351,8903
+get_pmv(441,11809
+T264_mode_decision_inter_16x16p(477,12794
+T264_mode_decision_inter_16x8p(583,16889
+T264_mode_decision_inter_8x16p(631,18570
+T264_mode_decision_inter_8x8p(684,20443
+T264_mode_decision_inter_8x4p(725,22191
+T264_mode_decision_inter_4x8p(773,24381
+T264_mode_decision_inter_4x4p(822,26524
+T264_encode_inter_16x16p(892,29773
+T264_encode_inter_y(918,30414
+T264_transform_inter_uv(925,30592
+T264_encode_inter_uv(980,31977
+
+../../encoder/intra.c,358
+T264_mode_decision_intra_y(40,1392
+T264_mode_decision_intra_16x16(65,1910
+T264_mode_decision_intra_4x4(136,3743
+T264_intra_16x16_available(222,6161
+T264_intra_4x4_available(283,7526
+T264_encode_intra_y(401,10745
+T264_encode_intra_4x4(454,11967
+T264_mode_decision_intra_uv(480,12742
+T264_intra_8x8_available(563,15231
+T264_encode_intra_uv(634,17014
+
+../../encoder/predict.c,1024
+T264_predict_16x16_mode_0_c(37,1240
+T264_predict_16x16_mode_1_c(55,1552
+T264_predict_16x16_mode_2_c(73,1879
+T264_predict_16x16_mode_20_c(102,2352
+T264_predict_16x16_mode_21_c(130,2792
+T264_predict_16x16_mode_22_c(158,3233
+T264_predict_16x16_mode_3_c(176,3538
+void T264_predict_4x4_mode_0_c(206,4230
+void T264_predict_4x4_mode_1_c(221,4534
+void T264_predict_4x4_mode_2_c(236,4827
+void T264_predict_4x4_mode_20_c(260,5273
+void T264_predict_4x4_mode_21_c(283,5688
+void T264_predict_4x4_mode_22_c(306,6101
+void T264_predict_4x4_mode_3_c(312,6291
+void T264_predict_4x4_mode_4_c(326,7110
+void T264_predict_4x4_mode_5_c(340,7953
+void T264_predict_4x4_mode_6_c(358,8872
+void T264_predict_4x4_mode_7_c(375,9791
+void T264_predict_4x4_mode_8_c(393,10662
+T264_predict_8x8_mode_0_c(411,11360
+T264_predict_8x8_mode_1_c(429,11668
+T264_predict_8x8_mode_2_c(447,11991
+T264_predict_8x8_mode_20_c(499,12995
+T264_predict_8x8_mode_21_c(534,13598
+T264_predict_8x8_mode_22_c(573,14276
+T264_predict_8x8_mode_3_c(591,14577
+
+../../encoder/rbsp.c,283
+nal_unit_init(33,1198
+nal_unit_write(40,1373
+seq_set_init(47,1562
+seq_set_write(70,2227
+pic_set_init(122,3851
+pic_set_write(148,4640
+slice_header_init(170,5585
+slice_header_write(194,6372
+custom_set_init(276,8924
+custom_set_write(285,9133
+void rbsp_trailing_bits(291,9289
+
+../../encoder/T264.c,354
+int32_t total_no 57,1616
+char src_path[58,1641
+char out_path[59,1662
+char rec_path[60,1683
+char ref_path[62,1725
+static int  ref_skip;63,1746
+winDisplay(70,1820
+uninit_display(114,2901
+init_param(125,3016
+encode(223,7450
+write_frame(310,9694
+dec_psnr(338,10370
+decode(387,11355
+#define BUFFER_SIZE 390,11438
+help(581,16561
+main(589,16762
+
+../../encoder/t264enc.c,2288
+#define T264_SCAN8_SIZE 10,169
+#define T264_SCAN8_0 11,200
+static const int T264_scan8[13,232
+static const uint8_t block_idx_xy[29,789
+#define IS_INTRA(IS_INTRA37,916
+#define IS_SKIP(IS_SKIP38,975
+	INTRA_4x4 40,1048
+	INTRA_16x16 41,1075
+	INTRA_PCM 42,1102
+	P_L0 44,1131
+	P_8x81 45,1154
+	P_SKIP1 46,1177
+	B_DIRECT 48,1202
+	B_L0_L0 49,1225
+	B_L0_L1 50,1248
+	B_L0_BI 51,1271
+	B_L1_L0 52,1294
+	B_L1_L1 53,1318
+	B_L1_BI 54,1342
+	B_BI_L0 55,1366
+	B_BI_L1 56,1390
+	B_BI_BI 57,1414
+	B_8x81 58,1438
+	B_SKIP1 59,1462
+static const int T264_mb_partition_listX_table[62,1492
+static const int T264_mb_type_list0_table[79,1851
+static const int T264_mb_type_list1_table[92,2297
+static void T264_cabac_mb_type(106,2745
+static void T264_cabac_mb_intra4x4_pred_mode(384,12936
+static void T264_cabac_mb_intra8x8_pred_mode(405,13588
+static void T264_cabac_mb_cbp_luma(435,14394
+static void T264_cabac_mb_cbp_chroma(482,15681
+static void T264_cabac_mb_qp_delta(518,16568
+void T264_cabac_mb_skip(545,17335
+static __inline  void T264_cabac_mb_sub_p_partition(565,17897
+static __inline  void T264_cabac_mb_sub_b_partition(590,18710
+static __inline  void T264_cabac_mb_ref(695,22897
+static __inline  void  T264_cabac_mb_mvd_cpn(737,24103
+static __inline  void  T264_cabac_mb_mvd(793,25516
+static __inline void T264_cabac_mb8x8_mvd(824,26400
+static int T264_cabac_mb_cbf_ctxidxinc(870,27466
+static void block_residual_write_cabac(996,30866
+T264_mb_predict_intra4x4_mode(1129,34907
+void T264_macroblock_write_cabac(1148,35292
+const int32_t chroma_qp[1474,45096
+static const int32_t qp_cost[1484,45428
+T264_mb_load_context(1495,45665
+#define INITINVALIDVEC(INITINVALIDVEC1529,47012
+T264_mb_save_context(1859,61877
+T264_reset_ref(1865,61991
+T264_load_ref(1878,62196
+T264_extend_border(1913,63037
+T264_interpolate_halfpel(2015,66748
+T264_save_ref(2183,73590
+T264_mb_mode_decision(2206,74120
+T264_mb_encode(2223,74445
+T264_emms_c(2258,75186
+T264_init_cpu(2263,75215
+T264_init_frame(2433,81754
+T264_pending_bframe(2442,81987
+T264_mb_encode_post(2453,82262
+#define INITINVALIDVEC(INITINVALIDVEC2595,86245
+write_dst(2610,86619
+T264_open(2656,87724
+T264_close(2738,90640
+T264_encode_frame(2765,91266
+T264_flush_frames(2900,94541
+T264_encode(2952,95823
+
+../../encoder/typedecision.c,131
+#define INTRA_THRESH 31,1174
+#define SEARCH_THRESH 32,1201
+MBAnalysis(35,1248
+MEAnalysis(68,2277
+decision_slice_type(110,3279
+
+../../encoder/win.c,295
+unsigned char *clp 75,2865
+unsigned char *clp1 76,2893
+T_VDWINDOW vdWindow;84,2971
+int initDisplay 88,2999
+int InitDisplayWindowThread 100,3250
+int displayImage 151,4663
+int DrawDIB 184,5484
+void DisplayWinMain 214,6048
+LRESULT APIENTRY MainWndProc 268,7514
+int closeDisplay 382,10825
+
+../../encoder/yuv2rgb.c,1735
+EXTERN int horizontal_size,93,3395
+EXTERN int horizontal_size, vertical_size,93,3395
+EXTERN int horizontal_size, vertical_size, mb_width,93,3395
+EXTERN int horizontal_size, vertical_size, mb_width, mb_height;93,3395
+EXTERN int coded_picture_width,94,3460
+EXTERN int coded_picture_width, coded_picture_height;94,3460
+EXTERN int ref_coded_picture_width,95,3515
+EXTERN int ref_coded_picture_width, ref_coded_picture_height;95,3515
+EXTERN int chrom_width,96,3578
+EXTERN int chrom_width, chrom_height,96,3578
+EXTERN int chrom_width, chrom_height, blk_cnt;96,3578
+EXTERN int ref_chrom_width,97,3626
+EXTERN int ref_chrom_width, ref_chrom_height;97,3626
+#define GAMMA_CORRECTION(GAMMA_CORRECTION123,4858
+#define CHROMA_CORRECTION256(CHROMA_CORRECTION256124,4941
+#define CHROMA_CORRECTION128(CHROMA_CORRECTION128127,5145
+#define CHROMA_CORRECTION256D(CHROMA_CORRECTION256D130,5321
+#define CHROMA_CORRECTION128D(CHROMA_CORRECTION128D133,5526
+int gammaCorrectFlag 139,5730
+double gammaCorrect 140,5757
+int chromaCorrectFlag 143,5821
+double chromaCorrect 144,5849
+ number_of_bits_set 149,5982
+ shifted_down 163,6295
+ free_bits_at_top 176,6537
+ free_bits_at_bottom 191,6905
+static int *L_tab,202,7124
+static int *L_tab, *Cr_r_tab,202,7124
+static int *L_tab, *Cr_r_tab, *Cr_g_tab,202,7124
+static int *L_tab, *Cr_r_tab, *Cr_g_tab, *Cb_g_tab,202,7124
+static int *L_tab, *Cr_r_tab, *Cr_g_tab, *Cb_g_tab, *Cb_b_tab;202,7124
+static long *r_2_pix;207,7335
+static long *g_2_pix;208,7358
+static long *b_2_pix;209,7381
+static long *r_2_pix_alloc;210,7404
+static long *g_2_pix_alloc;211,7433
+static long *b_2_pix_alloc;212,7462
+ InitColorDither 231,7863
+ Color16DitherImage 381,12984
+ Color32DitherImage 512,15789
+
+../../encoder/yuvrgb24.c,193
+long int crv_tab[73,2389
+long int cbu_tab[74,2413
+long int cgu_tab[75,2437
+long int cgv_tab[77,2463
+long int tab_76309[78,2487
+void init_dither_tab 80,2515
+void ConvertYUVtoRGB 127,3652
+
+../../encoder/cabac.h,0
+
+../../encoder/cavlc.h,26
+#define _CAVLC_H_25,1076
+
+../../encoder/display.h,284
+#define __Linux_Display__2,27
+#define EXTERN 5,72
+#define EXTERN7,102
+#define _ANSI_ARGS_(_ANSI_ARGS_11,154
+#define _ANSI_ARGS_(_ANSI_ARGS_13,188
+#define O_BINARY 17,242
+#define mmax(mmax21,293
+#define mmin(mmin22,344
+#define mnint(mnint23,395
+#define sign(sign24,464
+
+../../encoder/estimation.h,29
+#define _ESTIMATION_25,1079
+
+../../encoder/inter_b.h,27
+#define _INTERB_H_25,1056
+
+../../encoder/inter.h,120
+#define _INTER_H_25,1076
+} search_data_t;search_data_t38,1370
+} subpart_search_data_t;subpart_search_data_t49,1684
+
+../../encoder/interpolate.h,100
+#define _INTERPOLATE_H_25,1082
+#define REFCOST(REFCOST34,1886
+#define REFCOST1(REFCOST136,2034
+
+../../encoder/intra.h,26
+#define _INTRA_H_25,1076
+
+../../encoder/predict.h,276
+#define _PREDICT_H25,1077
+#define _PREDICT_H_174,4382
+typedef void (*T264_predict_16x16_mode_t)T264_predict_16x16_mode_t75,4404
+typedef void (*T264_predict_4x4_mode_t)T264_predict_4x4_mode_t76,4511
+typedef void (*T264_predict_8x8_mode_t)T264_predict_8x8_mode_t77,4618
+
+../../encoder/rbsp.h,25
+#define _RBSP_H_25,1075
+
+../../encoder/typedecision.h,33
+#define _TYPEDECISION_H_25,1062
+
+../../encoder/vlc.h,288
+} vlc_t;vlc_t51,2245
+#define MKVLC(MKVLC54,2315
+static const vlc_t x264_coeff_token[55,2347
+static const vlc_t x264_level_prefix[497,17708
+static const vlc_t x264_total_zeros[518,18184
+static const vlc_t x264_total_zeros_dc[793,28159
+static const vlc_t x264_run_before[816,28755
+
+../../encoder/win.h,159
+} T_VDWINDOW;T_VDWINDOW82,2754
+#define VIDEO_BEGIN	85,2773
+#define VIDEO_DRAW_FRAME	86,2814
+#define VIDEO_REDRAW_FRAME	87,2856
+#define VIDEO_END	88,2898
+
+../../decoder/block.c,704
+T264dec_mb_decode_predict_i16x16_y(38,1402
+T264dec_mb_decode_predict_i4x4_y(141,3881
+T264dec_mb_decode_predict_i8x8_y(288,8184
+T264dec_mb_decode_i16x16_y(417,11926
+T264dec_mb_decode_i4x4_y(448,12728
+T264dec_mb_decode_intra_y(477,13438
+T264dec_mb_decode_uv(486,13611
+T264dec_mb_decode_intra_uv(526,14556
+T264dec_mb_decode_interp_mc(534,14774
+T264dec_mb_decode_interp_transform(843,32302
+T264dec_mb_decode_interp_y(862,32767
+T264dec_mb_decode_interp_uv(869,32940
+    static const int8_t index_[1027,43028
+T264_mb4x4_interb_uv_mc(1036,43459
+T264_mb4x4_interb_mc(1095,45705
+T264dec_mb_decode_interb_mc(1168,49314
+T264dec_mb_decode_interb_y(1495,65531
+T264dec_mb_decode_interb_uv(1502,65704
+
+../../decoder/dec_cabac.c,1863
+#define T264_SCAN8_SIZE 63,2566
+#define T264_SCAN8_0 64,2597
+static const int T264_scan8[66,2629
+static const uint8_t block_idx_xy[82,3195
+#define IS_INTRA(IS_INTRA90,3322
+#define IS_SKIP(IS_SKIP91,3381
+	INTRA_4x4 93,3454
+	INTRA_16x16 94,3481
+	INTRA_PCM 95,3508
+	P_L0 97,3537
+	P_8x81 98,3560
+	P_SKIP1 99,3583
+	B_DIRECT 101,3608
+	B_L0_L0 102,3631
+	B_L0_L1 103,3654
+	B_L0_BI 104,3677
+	B_L1_L0 105,3700
+	B_L1_L1 106,3724
+	B_L1_BI 107,3748
+	B_BI_L0 108,3772
+	B_BI_L1 109,3796
+	B_BI_BI 110,3820
+	B_8x81 111,3844
+	B_SKIP1 112,3868
+static const int T264_mb_type_list0_table[115,3898
+static const int T264_mb_type_list1_table[128,4344
+static const int T264_mb_partition_listX_table[141,4790
+static const int T264_map_btype_mbpart[158,5149
+static void T264_cabac_mb_type(175,5497
+static int T264_cabac_mb_intra4x4_pred_mode(444,12984
+static void T264_cabac_mb_intra8x8_pred_mode(465,13450
+static void T264_cabac_mb_cbp_luma(501,14148
+static void T264_cabac_mb_cbp_chroma(561,15349
+static void T264_cabac_mb_qp_delta(597,16093
+int T264_cabac_dec_mb_skip(624,16767
+static __inline  int T264_cabac_mb_sub_p_partition(646,17277
+static __inline  int T264_cabac_mb_sub_b_partition(670,17696
+static __inline  void T264_cabac_mb_ref(721,18923
+static __inline  int  T264_cabac_mb_mvd_cpn(779,20300
+static __inline  void  T264_cabac_mb_mvd(831,21260
+static __inline void T264_cabac_mb8x8_mvd(865,22250
+static int T264_cabac_mb_cbf_ctxidxinc(908,23300
+static void block_residual_read_cabac(1060,26381
+T264_mb_predict_intra4x4_mode(1202,29890
+static void __inline mb_get_directMB16x16_mv_cabac(1220,30273
+void T264_macroblock_read_cabac(1248,30954
+#define INITINVALIDVEC(INITINVALIDVEC1279,31768
+#define INITINVALIDVEC(INITINVALIDVEC1391,35071
+#define INITINVALIDVEC(INITINVALIDVEC1496,38328
+int T264dec_mb_read_cabac(1606,41263
+
+../../decoder/dec_cavlc.c,4793
+#define BLOCK_INDEX_CHROMA_DC 37,1349
+#define BLOCK_INDEX_LUMA_DC 38,1387
+#define INITINVALIDVEC(INITINVALIDVEC39,1425
+} vlc_coeff_token_t;vlc_coeff_token_t46,1584
+#define VLC(VLC47,1606
+#define VLC2(VLC248,1638
+#define VLC4(VLC449,1688
+static const uint8_t i16x16_eg_to_cbp[51,1742
+static const uint8_t i4x4_eg_to_cbp[60,2064
+static const uint8_t inter_eg_to_cbp[68,2317
+static const vlc_coeff_token_t coeff4_0[76,2593
+static const vlc_coeff_token_t coeff4_1[84,2788
+static const vlc_coeff_token_t coeff3_0[95,3117
+static const vlc_coeff_token_t coeff2_0[163,4893
+static const vlc_coeff_token_t coeff2_1[175,5204
+static const vlc_coeff_token_t coeff2_2[187,5426
+static const vlc_coeff_token_t coeff2_3[199,5649
+static const vlc_coeff_token_t coeff2_4[211,5874
+static const vlc_coeff_token_t coeff2_5[223,6104
+static const vlc_coeff_token_t coeff2_6[235,6339
+static const vlc_coeff_token_t coeff1_0[254,6931
+static const vlc_coeff_token_t coeff1_1[263,7139
+static const vlc_coeff_token_t coeff1_2[277,7547
+static const vlc_coeff_token_t coeff1_3[295,8066
+static const vlc_coeff_token_t coeff1_4[307,8465
+static const vlc_coeff_token_t coeff1_5[319,8872
+static const vlc_coeff_token_t coeff1_6[331,9295
+static const vlc_coeff_token_t coeff0_0[348,9926
+static const vlc_coeff_token_t coeff0_1[382,10860
+static const vlc_coeff_token_t coeff0_2[394,11125
+static const vlc_coeff_token_t coeff0_3[410,11558
+static const vlc_coeff_token_t coeff0_4[421,11798
+static const vlc_coeff_token_t coeff0_5[428,11960
+static const uint8_t prefix_table0[436,12148
+static const uint8_t prefix_table1[445,12271
+static const uint8_t prefix_table2[454,12394
+static const uint8_t prefix_table3[463,12519
+#define VLC(VLC475,12695
+#define VLC2(VLC2476,12721
+#define VLC4(VLC4477,12762
+#define VLC8(VLC8478,12805
+} zero_count_t;zero_count_t484,12907
+static const zero_count_t total_zero_table1_0[486,12926
+static const zero_count_t total_zero_table1_1[500,13284
+static const zero_count_t total_zero_table2_0[513,13576
+static const zero_count_t total_zero_table2_1[523,13766
+static const zero_count_t total_zero_table3_0[537,14062
+static const zero_count_t total_zero_table3_1[546,14261
+static const zero_count_t total_zero_table6_0[560,14557
+static const zero_count_t total_zero_table6_1[568,14723
+static const zero_count_t total_zero_table7_0[580,14933
+static const zero_count_t total_zero_table7_1[588,15096
+static const zero_count_t total_zero_table8_0[599,15291
+static const zero_count_t total_zero_table8_1[607,15454
+static const zero_count_t total_zero_table9_0[617,15634
+static const zero_count_t total_zero_table9_1[625,15797
+static const zero_count_t total_zero_table4_0[634,15962
+static const zero_count_t total_zero_table4_1[647,16247
+static const zero_count_t total_zero_table5_0[655,16420
+static const zero_count_t total_zero_table5_1[667,16655
+static const zero_count_t total_zero_table10_0[675,16789
+static const zero_count_t total_zero_table10_1[682,16926
+static const zero_count_t total_zero_table11_0[691,17092
+static const zero_count_t total_zero_table12_0[701,17274
+static const zero_count_t total_zero_table13_0[710,17439
+static const zero_count_t total_zero_table14_0[718,17586
+static const zero_count_t total_zero_table_chroma[725,17698
+static const zero_count_t run_before_table_0[744,17996
+static const uint8_t run_before_table_1[797,18875
+static const uint8_t run_before_table_2[806,19003
+T264_mb_read_cavlc_i4x4_mode(817,19193
+T264dec_mb_read_coff_token_t4(855,20028
+T264dec_mb_read_coff_token_t3(902,21157
+T264dec_mb_read_coff_token_t2(914,21437
+T264dec_mb_read_coff_token_t1(962,22434
+T264dec_mb_read_coff_token_t0(1010,23434
+T264dec_mb_read_level_prefix(1052,24309
+T264dec_mb_read_total_zero1(1081,24817
+T264dec_mb_read_total_zero2(1105,25319
+T264dec_mb_read_total_zero3(1129,25820
+T264dec_mb_read_total_zero6(1153,26321
+T264dec_mb_read_total_zero7(1177,26822
+T264dec_mb_read_total_zero8(1201,27323
+T264dec_mb_read_total_zero9(1225,27824
+T264dec_mb_read_total_zero4(1249,28325
+T264dec_mb_read_total_zero5(1273,28839
+T264dec_mb_read_total_zero10(1297,29353
+T264dec_mb_read_total_zero11(1321,29859
+T264dec_mb_read_total_zero12(1336,30162
+T264dec_mb_read_total_zero13(1349,30431
+T264dec_mb_read_total_zero14(1362,30700
+T264dec_mb_read_total_zero15(1375,30969
+T264dec_mb_read_total_zero_chroma(1381,31063
+T264dec_mb_read_run_before(1396,31432
+T264dec_mb_read_cavlc_residual(1440,32519
+        typedef void (*T264dec_mb_read_coff_token_t)T264dec_mb_read_coff_token_t1457,33003
+            typedef uint8_t (*T264dec_mb_read_total_zero_t)T264dec_mb_read_total_zero_t1570,36877
+T264dec_mb_read_intra_cavlc(1610,38318
+mb_get_directMB16x16_mv(1673,39967
+T264dec_mb_read_cavlc(1679,40056
+
+../../decoder/T264dec.c,679
+#define NAL_BUFFER_LEN 46,1477
+T264dec_load_ref(49,1541
+T264dec_save_ref(84,2385
+T264dec_mb_load_context(106,2906
+#define INITINVALIDVEC(INITINVALIDVEC122,3584
+T264dec_mb_decode(140,3977
+T264dec_mb_save_context(179,4762
+T264dec_parse_slice_header(185,4894
+get_output_frame(258,7186
+T264dec_parse_slice(283,7754
+T264dec_parse_pic_header(358,9605
+T264dec_parse_seq_header(385,10798
+T264dec_parse_custom_set(466,14728
+T264dec_custom_buffer(476,14964
+T264dec_copy_nal(481,15053
+T264dec_find_nal(525,16055
+T264dec_decode_nal(559,16646
+T264dec_open(602,17736
+T264dec_close(637,18561
+T264dec_buffer(653,18962
+T264dec_parse(660,19093
+T264dec_flush_frame(671,19271
+
+../../decoder/block.h,27
+#define _DECODE_H_25,1057
+
+../../decoder/dec_cabac.h,30
+#define _DEC_CABAC_H_25,1060
+
+../../decoder/dec_cavlc.h,30
+#define _DEC_CAVLC_H_25,1060
+
+../../common/cabac_engine.c,1267
+static int binCount 57,2417
+static int bitCnt 58,2443
+FILE *fpCABAC;59,2467
+FILE *fpCABACDec;60,2483
+static int binCountDec 61,2502
+static int bitCntDec 62,2531
+#define T264_clip3(T264_clip365,2568
+static const int T264_cabac_context_init_I[67,2655
+static const int T264_cabac_context_init_PB[216,9008
+static const int T264_cabac_range_lps[630,30004
+static const int T264_transition_lps[656,31707
+static const int T264_transition_mps[663,31973
+#define FIX8(FIX8671,32242
+static int T264_cabac_probability[672,32277
+static int T264_cabac_entropy[708,34302
+void T264_cabac_context_init(750,36482
+void T264_cabac_decode_init(786,37524
+static __inline void T264_cabac_decode_renorm(799,37784
+int  T264_cabac_decode_decision(808,38009
+int  T264_cabac_decode_bypass(853,39175
+int  T264_cabac_decode_terminal(874,39673
+void T264_cabac_model_init(890,40051
+int  T264_cabac_model_get 901,40236
+void T264_cabac_model_update(906,40355
+void T264_cabac_encode_init(946,41730
+static __inline void T264_cabac_putbit(962,42037
+static __inline void T264_cabac_encode_renorm(980,42379
+void T264_cabac_encode_decision(1008,42990
+void T264_cabac_encode_bypass(1059,44312
+void T264_cabac_encode_terminal(1094,45000
+void T264_cabac_encode_flush(1107,45240
+
+../../common/dct.c,336
+#define Q_BITS 27,1098
+#define DQ_BITS 28,1126
+#define DQ_ROUND 29,1153
+dct4x4_c(62,2556
+dct4x4dc_c(101,3553
+dct2x2dc_c(134,4500
+idct4x4_c(150,4819
+idct4x4dc_c(183,5795
+idct2x2dc_c(216,6697
+quant4x4_c(234,7094
+quant4x4dc_c(251,7556
+quant2x2dc_c(269,8043
+iquant4x4_c(287,8539
+iquant4x4dc_c(300,8802
+iquant2x2dc_c(326,9389
+
+../../common/deblock.c,361
+#define IS_INTRA(IS_INTRA28,1160
+static const uint8_t deblock_threshold_a[30,1204
+static const uint8_t deblock_threshold_b[38,1451
+static const uint8_t deblock_threshold_tc0[46,1684
+get_strength(60,2487
+EdgeLoopH(169,6333
+EdgeLoopV(274,10312
+deblock_mb_chroma(379,14473
+deblock_mb_chroma_(459,16773
+deblock_mb(568,20527
+T264_deblock_frame(708,25244
+
+../../common/utility.c,418
+#define Q_BITS 24,1110
+#define DQ_BITS 25,1138
+#define DQ_ROUND 26,1165
+T264_malloc(41,1400
+T264_free(89,2984
+expand8to16_c(108,3311
+expand8to16sub_c(126,3895
+contract16to8_c(154,4753
+contract16to8add_c(177,5500
+memcpy_stride_u_c(220,7038
+T264_sad_u_c(235,7380
+uint32_t _satd_4x4_dif_c(257,7867
+T264_satd_u_c(341,10105
+#define SADFUNC(SADFUNC370,10849
+SADFUNC(373,11060
+array_non_zero_count(496,14776
+
+../../common/bitstream.h,2273
+#define _BITSTREAM_H_52,2361
+#define VIDOBJ_START_CODE	61,2603
+#define VIDOBJLAY_START_CODE	62,2662
+#define VISOBJSEQ_START_CODE	63,2722
+#define VISOBJSEQ_STOP_CODE	64,2763
+#define USERDATA_START_CODE	65,2814
+#define GRPOFVOP_START_CODE	66,2855
+#define VISOBJ_START_CODE	68,2943
+#define VOP_START_CODE	69,2982
+#define VISOBJ_TYPE_VIDEO	73,3068
+#define VIDOBJLAY_TYPE_SIMPLE	80,3288
+#define VIDOBJLAY_TYPE_ART_SIMPLE	89,3667
+#define VIDOBJLAY_TYPE_ASP 96,3991
+#define VIDOBJLAY_AR_EXTPAR	105,4317
+#define VIDOBJLAY_SHAPE_RECTANGULAR	108,4356
+#define VIDOBJLAY_SHAPE_BINARY	109,4396
+#define VIDOBJLAY_SHAPE_BINARY_ONLY	110,4432
+#define VIDOBJLAY_SHAPE_GRAYSCALE	111,4472
+#define SPRITE_NONE	114,4514
+#define SPRITE_STATIC	115,4538
+#define SPRITE_GMC	116,4563
+#define READ_MARKER(READ_MARKER120,4592
+#define WRITE_MARKER(WRITE_MARKER121,4636
+#define I_VOP	125,4764
+#define P_VOP	126,4781
+#define B_VOP	127,4798
+#define S_VOP	128,4815
+#define N_VOP	129,4832
+#define NUMBITS_VP_RESYNC_MARKER 132,4874
+#define RESYNC_MARKER 133,4912
+Bitstream;Bitstream147,5129
+BitstreamInit(151,5203
+BitstreamReset(188,5980
+BitstreamShowBits(214,6393
+BitstreamSkip(232,6806
+BitstreamNumBitsToByteAlign(254,7184
+BitstreamShowBitsFromByteAlign(263,7367
+BitstreamByteAlign(285,7890
+BitstreamPos(298,8104
+BitstreamFlush(304,8262
+BitstreamLength(322,8600
+BitstreamForward(339,8978
+BitstreamGetBits(359,9293
+BitstreamGetBit(372,9516
+BitstreamPutBit(381,9660
+BitstreamPutBits(394,9870
+static const int stuffing_codes[418,10355
+BitstreamPad(434,10750
+BitstreamPadAlways(448,11032
+BitstreamPadZero(455,11192
+BitstreamPadOneA(463,11367
+BitstreamPadOne(470,11536
+eg_write(479,11780
+eg_read(507,12274
+#define eg_write_ue 526,12541
+#define eg_read_ue 527,12571
+#define eg_write_direct 528,12599
+#define eg_write_direct1 529,12641
+#define eg_read_direct 530,12683
+#define eg_read_direct1 531,12724
+#define eg_read_skip 532,12765
+#define eg_show 533,12801
+#define eg_init 534,12836
+#define eg_align 535,12867
+#define bs_t 536,12902
+#define eg_len 537,12926
+#define eg_flush 538,12958
+eg_write_se(541,13015
+eg_read_se(551,13208
+eg_write_te(562,13420
+eg_read_te(568,13590
+eg_size_ue(574,13730
+eg_size_se(600,14097
+eg_size_te(610,14296
+
+../../common/cabac_engine.h,33
+#define _CABAC_ENGINE_H_24,1118
+
+../../common/config.h,174
+#define _CONFIG_H_27,1221
+#define ARCH_IS_IA3232,1278
+#define ENABLE_PROFILE33,1300
+#define ARCH_IS_IA3241,1402
+#define ENABLE_PROFILE42,1424
+#define CHIP_DM64249,1518
+
+../../common/dct.h,24
+#define _DCT_H_25,1074
+
+../../common/deblock.h,28
+#define _DEBLOCK_H_25,1057
+
+../../common/inttypes.h,468
+#define __INTTYPES_H_19,563
+typedef signed char int8_t;int8_t24,685
+typedef unsigned char uint8_t;uint8_t25,714
+typedef short int16_t;int16_t27,748
+typedef unsigned int uint16_t;uint16_t28,772
+typedef int int32_t;int32_t30,806
+typedef unsigned long uint32_t;uint32_t31,828
+typedef long long int64_t;int64_t33,863
+typedef unsigned long long uint64_t;uint64_t34,891
+typedef int16_t intptr_t;intptr_t36,931
+typedef uint16_t uintptr_t;uintptr_t37,958
+
+../../common/portab.h,1960
+#define _PORTAB_H_25,1077
+#define _RW29,1122
+#define _R30,1135
+#define _W31,1147
+#define _INPUT32,1159
+#define _OUTPUT33,1175
+#define TRUE 35,1194
+#define FALSE 36,1210
+#define int8_t 39,1252
+#define uint8_t 40,1275
+#define int16_t 41,1307
+#define uint16_t 42,1331
+#define int32_t 43,1364
+#define uint32_t 44,1386
+#define int64_t 45,1417
+#define uint64_t 46,1443
+#define ptr_t 47,1478
+#define BYTE 49,1504
+#define INT32 50,1528
+#define INT16 51,1552
+#define UINT16 52,1576
+#define UINT32 53,1601
+#define BSWAP(BSWAP57,1724
+         static __inline uint64_t read_counter(58,1950
+#define SWAP(SWAP65,2092
+#define CLIP1(CLIP166,2164
+#define ABS(ABS67,2210
+extern _declspec(77,2540
+#define DECLARE_ALIGNED_MATRIX(DECLARE_ALIGNED_MATRIX80,2647
+#define DECLARE_ALIGNED_MATRIX_H(DECLARE_ALIGNED_MATRIX_H83,2789
+#define DECLARE_ALIGNED2_MATRIX_H(DECLARE_ALIGNED2_MATRIX_H86,2921
+#define ptr_t 95,3120
+#define BSWAP(BSWAP99,3241
+#define SWAP(SWAP110,3764
+#define CLIP1(CLIP1111,3836
+#define ABS(ABS112,3882
+#define DECLARE_ALIGNED_MATRIX(DECLARE_ALIGNED_MATRIX119,4146
+#define DECLARE_ALIGNED_MATRIX_H 120,4238
+#define DECLARE_ALIGNED2_MATRIX_H(DECLARE_ALIGNED2_MATRIX_H122,4429
+#define int8_t 128,4654
+#define uint8_t 129,4677
+#define int16_t 130,4709
+#define uint16_t 131,4733
+#define int32_t 132,4766
+#define uint32_t 133,4788
+#define int64_t 134,4819
+#define uint64_t 135,4842
+#define ptr_t 136,4874
+#define BYTE 138,4900
+#define INT32 139,4924
+#define INT16 140,4948
+#define UINT16 141,4972
+#define UINT32 142,4997
+#define BSWAP(BSWAP144,5024
+		 static __inline uint64_t read_counter(146,5261
+#define SWAP(SWAP156,5474
+#define CLIP1(CLIP1157,5546
+#define ABS(ABS158,5592
+#define DECLARE_ALIGNED_MATRIX(DECLARE_ALIGNED_MATRIX160,5633
+#define DECLARE_ALIGNED_MATRIX_H(DECLARE_ALIGNED_MATRIX_H162,5744
+#define DECLARE_ALIGNED2_MATRIX_H(DECLARE_ALIGNED2_MATRIX_H164,5857
+clip3(170,6058
+
+../../common/T264.h,6965
+#define _T264_H_25,1075
+#define DECLARE_ALIGNED_MATRIX_H(DECLARE_ALIGNED_MATRIX_H36,1180
+#define T264_MAJOR 40,1289
+#define T264_MINOR 41,1333
+#define T264_VER 42,1372
+#define USE_INTRA16x16 44,1438
+#define USE_INTRA4x4 45,1495
+#define USE_SUBBLOCK 46,1552
+#define USE_HALFPEL 47,1609
+#define USE_QUARTPEL 48,1661
+#define USE_FULLSEARCH 49,1716
+#define USE_DIAMONDSEACH 50,1764
+#define USE_FORCEBLOCKSIZE 51,1802
+#define USE_FASTINTERPOLATE 52,1869
+#define USE_SAD 53,1929
+#define USE_SATD 54,1982
+#define USE_INTRAININTER 55,2036
+#define USE_EXTRASUBPELSEARCH 56,2106
+#define USE_SCENEDETECT 57,2197
+#define CUSTOM_FASTINTERPOLATE 60,2257
+#define SEARCH_16x16P 62,2300
+#define SEARCH_16x8P 63,2327
+#define SEARCH_8x16P 64,2354
+#define SEARCH_8x8P 65,2381
+#define SEARCH_8x4P 66,2408
+#define SEARCH_4x8P 67,2436
+#define SEARCH_4x4P 68,2464
+#define SEARCH_16x16B 70,2494
+#define SEARCH_16x8B 71,2529
+#define SEARCH_8x16B 72,2564
+#define SEARCH_8x8B 73,2599
+#define T264_CPU_FORCE 80,2788
+#define T264_CPU_MMX 81,2818
+#define T264_CPU_SSE 82,2849
+#define T264_CPU_SSE2 83,2882
+#define MB_LEFT 86,2935
+#define MB_TOP 87,2963
+#define MB_TOPRIGHT 88,2991
+#define MAX_REFFRAMES 90,3021
+#define MAX_BREFNUMS 91,3048
+#define MAX_PLUGINS 92,3074
+#define CACHE_SIZE 93,3100
+#define EDGED_WIDTH 94,3127
+#define EDGED_HEIGHT 95,3169
+#define T264_MIN(T264_MIN97,3207
+#define T264_MAX(T264_MAX98,3254
+#define STATE_BEFORESEQ 101,3324
+#define STATE_BEFOREGOP 102,3375
+#define STATE_BEFOREPIC 103,3428
+#define STATE_AFTERPIC 104,3478
+#define DISPLAY_PSNR 107,3557
+#define DISPLAY_BLOCK 108,3584
+#define CHROMA_COEFF_COST 110,3613
+#define IPM_LUMA 112,3676
+#define VEC_LUMA 113,3732
+#define NNZ_LUMA 114,3780
+#define NNZ_CHROMA0 115,3836
+#define NNZ_CHROMA1 116,3860
+    NAL_SLICE_NOPART 120,3895
+    NAL_SLICE_PARTA,121,3922
+    NAL_SLICE_PARTB,122,3944
+    NAL_SLICE_PARTC,123,3966
+    NAL_SLICE_IDR,124,3988
+    NAL_SEI,125,4008
+    NAL_SEQ_SET,126,4022
+    NAL_PIC_SET,127,4040
+    NAL_ACD,128,4058
+    NAL_END_SEQ,129,4072
+    NAL_END_STREAM,130,4090
+    NAL_FILTER,131,4111
+    NAL_CUSTOM_SET 132,4128
+	Intra_16x16_TOP 138,4195
+	Intra_16x16_LEFT,139,4218
+	Intra_16x16_DC,140,4238
+	Intra_16x16_PLANE,141,4256
+	Intra_16x16_DCTOP,142,4277
+	Intra_16x16_DCLEFT,143,4298
+	Intra_16x16_DC128144,4320
+    Intra_8x8_DC 150,4387
+    Intra_8x8_LEFT,151,4410
+    Intra_8x8_TOP,152,4431
+    Intra_8x8_PLANE,153,4451
+    Intra_8x8_DCTOP,154,4473
+    Intra_8x8_DCLEFT,155,4495
+    Intra_8x8_DC128156,4518
+	Intra_4x4_TOP 162,4579
+	Intra_4x4_LEFT,163,4600
+	Intra_4x4_DC,164,4618
+	Intra_4x4_DIAGONAL_DOWNLEFT,165,4634
+	Intra_4x4_DIAGONAL_DOWNRIGHT,166,4666
+	Intra_4x4_VERTICAL_RIGHT,167,4699
+	Intra_4x4_HORIZONTAL_DOWN,168,4728
+	Intra_4x4_VERTICAL_LEFT,169,4758
+	Intra_4x4_HORIZONTAL_UP,170,4786
+	Intra_4x4_DCTOP 171,4814
+	Intra_4x4_DCLEFT,172,4837
+	Intra_4x4_DC128173,4857
+	MB_16x16 179,4909
+	MB_16x8,180,4925
+	MB_8x16,181,4936
+	MB_8x8,182,4947
+    MB_8x8ref0,183,4957
+	MB_8x4,184,4974
+	MB_4x8,185,4984
+	MB_4x4,186,4994
+	MB_2x2187,5004
+    B_DIRECT_16x16 192,5028
+    B_L0_16x16,193,5054
+    B_L1_16x16,194,5071
+    B_Bi_16x16,195,5088
+    B_L0_16x8,196,5105
+    B_L1_16x8,197,5121
+    B_Bi_16x8,198,5137
+    B_L0_8x16,199,5153
+    B_L1_8x16,200,5169
+    B_Bi_8x16,201,5185
+    B_L0_L0_16x8 206,5216
+    B_L0_L0_8x16,207,5239
+    B_L1_L1_16x8,208,5258
+    B_L1_L1_8x16,209,5277
+    B_L0_L1_16x8,210,5296
+    B_L0_L1_8x16,211,5315
+    B_L1_L0_16x8,212,5334
+    B_L1_L0_8x16,213,5353
+    B_L0_Bi_16x8,214,5372
+    B_L0_Bi_8x16,215,5391
+    B_L1_Bi_16x8,216,5410
+    B_L1_Bi_8x16,217,5429
+    B_Bi_L0_16x8,218,5448
+    B_Bi_L0_8x16,219,5467
+    B_Bi_L1_16x8,220,5486
+    B_Bi_L1_8x16,221,5505
+    B_Bi_Bi_16x8,222,5524
+    B_Bi_Bi_8x16,223,5543
+    B_8x8224,5562
+    B_DIRECT_8x8 229,5588
+    B_L0_8x8,230,5613
+    B_L1_8x8,231,5628
+    B_Bi_8x8,232,5643
+    B_L0_8x4,233,5658
+    B_L0_4x8,234,5673
+    B_L1_8x4,235,5688
+    B_L1_4x8,236,5703
+    B_Bi_8x4,237,5718
+    B_Bi_4x8,238,5733
+    B_L0_4x4,239,5748
+    B_L1_4x4,240,5763
+    B_Bi_4x4241,5778
+    I_4x4,247,5826
+	I_16x16,248,5838
+    P_SKIP,249,5849
+    P_MODE,250,5862
+    B_SKIP,251,5875
+    B_MODE,252,5888
+    SLICE_P 258,5931
+    SLICE_B,259,5949
+    SLICE_I,260,5963
+    SLICE_SP,261,5977
+    SLICE_SI,262,5992
+    SLICE_IDR263,6007
+    DEC_STATE_BUFFER 268,6046
+    DEC_STATE_OK,269,6074
+    DEC_STATE_SEQ,270,6093
+    DEC_STATE_PIC,271,6113
+    DEC_STATE_SLICE,272,6133
+    DEC_STATE_CUSTOM_SET,273,6155
+    DEC_STATE_UNKOWN274,6182
+} decoder_state_t;decoder_state_t275,6204
+static const int8_t luma_index[290,6465
+static const int8_t luma_inverse_x[298,6584
+static const int8_t luma_inverse_y[303,6686
+static const int8_t COEFF_COST[309,6835
+typedef struct T264_t T264_t;T264_t314,6919
+} T264_param_t;T264_param_t344,7738
+} T264_stat_t;T264_stat_t352,7894
+} T264_nal_t;T264_nal_t362,8029
+} T264_seq_set_t;T264_seq_set_t376,8377
+} T264_pic_set_t;T264_pic_set_t393,8883
+} T264_slice_t;T264_slice_t415,9512
+} T264_custom_set_t;T264_custom_set_t421,9588
+} T264_plugin_t;T264_plugin_t429,9794
+} T264_vector_t;T264_vector_t436,9885
+} T264_mb_context_t;T264_mb_context_t471,10774
+} T264_frame_t;T264_frame_t479,10913
+typedef struct T264_search_context_tT264_search_context_t481,10932
+} T264_search_context_t;T264_search_context_t494,11222
+} T264_cabac_t;T264_cabac_t526,11602
+#define _PREDICT_H_1529,11643
+typedef void (*T264_predict_16x16_mode_t)T264_predict_16x16_mode_t530,11665
+typedef void (*T264_predict_4x4_mode_t)T264_predict_4x4_mode_t531,11772
+typedef void (*T264_predict_8x8_mode_t)T264_predict_8x8_mode_t532,11879
+typedef void (*expand8to16_t)expand8to16_t535,11996
+typedef void (*expand8to16sub_t)expand8to16sub_t536,12123
+typedef void (*contract16to8_t)contract16to8_t537,12268
+typedef void (*contract16to8add_t)contract16to8add_t538,12397
+typedef void (*memcpy_stride_u_t)memcpy_stride_u_t539,12543
+typedef uint32_t (*T264_cmp_t)T264_cmp_t540,12672
+typedef void (*T264_pia_t)T264_pia_t541,12774
+typedef uint32_t (*T264_satd_i16x16_u_t)T264_satd_i16x16_u_t542,12901
+typedef void (*T264_dct_t)T264_dct_t544,13015
+typedef void (*T264_quant4x4_t)T264_quant4x4_t545,13059
+typedef void (*T264_quant4x4dc_t)T264_quant4x4dc_t546,13144
+typedef void (*T264_quant2x2dc_t)T264_quant2x2dc_t547,13213
+typedef void (*T264_iquant_t)T264_iquant_t548,13300
+typedef void (*T264_eighth_pixel_mc_u_t)T264_eighth_pixel_mc_u_t550,13367
+typedef void (*T264_interpolate_halfpel_t)T264_interpolate_halfpel_t551,13515
+typedef void (*T264_pixel_avg_t)T264_pixel_avg_t552,13659
+typedef uint32_t (*T264_search_t)T264_search_t553,13814
+typedef void (*T264_emms_t)T264_emms_t554,13893
+typedef decoder_state_t (*action_t)action_t555,13925
+} T264_mb_t;T264_mb_t631,16223
+struct T264_tT264_t633,16239
+
+../../common/timer.h,175
+#define _TIMER_H_2,19
+} timer_st;timer_st11,145
+start_timer(16,207
+stop_timer_all(22,295
+init_timer(28,411
+start_timer(38,591
+stop_timer_all(43,647
+init_timer(48,707
+
+../../common/utility.h,122
+#define _UTILITY_H_25,1078
+scan_zig_4x4(57,3454
+unscan_zig_4x4(79,3912
+scan_zig_2x2(100,4370
+unscan_zig_2x2(109,4530
+
+../../encoder/plugins/ratecontrol.c,425
+} T264_rc_t;T264_rc_t72,1976
+rc_init_seq(84,2319
+rc_init_gop(151,3667
+rc_init_pic(176,4428
+rc_update_pic(241,6538
+qp2qstep(266,7072
+qstep2qp(281,7346
+rc_update_qp(331,8212
+remove_outlier(403,10810
+remove_mad_outlier(426,11360
+mad_model_estimator(449,11894
+rc_update_mad_model(507,13358
+quad_model_estimator(536,14241
+rc_update_quad_model(594,15679
+rc_proc(638,16948
+rc_create(661,17390
+rc_destroy(673,17660
+
+../../encoder/plugins/stat.c,103
+} stat_t;stat_t44,1391
+psnr(47,1427
+stat_proc(63,1720
+stat_create(159,5479
+stat_destroy(177,6025
+
+../../encoder/plugins/ratecontrol.h,32
+#define _RATECONTROL_H_28,1166
+
+../../encoder/plugins/stat.h,25
+#define _STAT_H_25,1054

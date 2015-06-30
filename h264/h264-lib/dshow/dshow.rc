@@ -1,0 +1,192 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_PROP DIALOGEX 0, 0, 268, 240
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_IFRAME,81,23,52,12,ES_AUTOHSCROLL | ES_NUMBER | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_SEARCH,199,24,52,12,ES_AUTOHSCROLL | ES_NUMBER | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_BITRATE,81,37,52,12,ES_AUTOHSCROLL | ES_NUMBER | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_REFNUM,199,38,52,12,ES_AUTOHSCROLL | ES_NUMBER | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_IQP,81,52,52,12,ES_AUTOHSCROLL | ES_NUMBER | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "bitrate(bps)",IDC_STATIC,21,37,55,8
+    LTEXT           "I Frame interval",IDC_STATIC,21,23,55,8
+    LTEXT           "first i,p qp",IDC_STATIC,21,52,55,8
+    LTEXT           "search range",IDC_STATIC,140,24,55,8
+    LTEXT           "ref frame num",IDC_STATIC,140,38,55,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,92,
+                    254,1
+    CONTROL         "I16x16",IDC_CHECK_I16X16,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,20,100,68,8
+    CONTROL         "I4x4",IDC_CHECK_I4X4,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,20,111,68,8
+    CONTROL         "P16x16",IDC_CHECK_P16X16,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,20,122,68,8
+    CONTROL         "P16x8",IDC_CHECK_P16X8,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,20,133,68,8
+    CONTROL         "P8x16",IDC_CHECK_P8X16,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,20,144,68,8
+    CONTROL         "P8x8",IDC_CHECK_P8X8,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,20,155,68,8
+    CONTROL         "P8x4",IDC_CHECK_P8X4,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,20,166,68,8
+    CONTROL         "P4x8",IDC_CHECK_P4X8,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,20,177,68,8
+    CONTROL         "P4x4",IDC_CHECK_P4X4,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,20,188,68,8
+    CONTROL         "quarter pel search",IDC_CHECK_QUARTPEL,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,121,100,74,8
+    CONTROL         "fast interpolate",IDC_CHECK_FASTINTERPOLATE,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,121,112,68,8
+    CONTROL         "SAD/SATD",IDC_CHECK_SAD,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,121,134,68,8
+    CONTROL         "deblock filter",IDC_CHECK_DEBLOCK,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,121,146,68,8
+    CONTROL         "cpu force",IDC_CHECK_CPU,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,121,158,68,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,221,
+                    254,1
+    LTEXT           "information",IDC_STATIC_INFO,17,224,235,8,SS_SUNKEN
+    PUSHBUTTON      "default",IDC_BUTTON_DEFAULT,203,180,50,13
+    EDITTEXT        IDC_EDIT_FRAMEFATE,199,53,52,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "frame rate",IDC_STATIC,139,53,55,8
+    EDITTEXT        IDC_EDIT_MINQP,81,65,52,12,ES_AUTOHSCROLL | ES_NUMBER | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "min qp",IDC_STATIC,21,65,55,8
+    EDITTEXT        IDC_EDIT_MAXQP,199,66,52,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "max qp",IDC_STATIC,139,66,55,8
+    LTEXT           "Static",IDC_STATIC_VER,20,10,81,9
+    EDITTEXT        IDC_EDIT_BFRAMENUM,81,79,52,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "b frame num",IDC_STATIC,21,79,55,8
+    CONTROL         "use intra in inter slice",IDC_CHECK_USEINTRAININTER,
+                    "Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,121,
+                    122,98,8
+    CONTROL         "B16x16",IDC_CHECK_B16X16,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,121,169,68,8
+    CONTROL         "B16x8",IDC_CHECK_B16X8,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,121,180,68,8
+    CONTROL         "B8x16",IDC_CHECK_B8X16,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,121,192,68,8
+    CONTROL         "B8x8",IDC_CHECK_B8X8,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,121,203,68,8
+    LTEXT           "(bitrate==0 means use const qp)",IDC_STATIC,142,81,119,
+                    10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG_PROP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 233
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_TITLE               "T264 property"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

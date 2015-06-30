@@ -1,0 +1,1 @@
+D:/qt/rtp/rtp/rtp/jrtplib-3.9.1/build/src/CMakeFiles/jrtplib-static.dir

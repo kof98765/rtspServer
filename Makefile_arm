@@ -1,0 +1,17 @@
+LIBS+=-ljrtplib -lpthread -ljthread
+CC=arm-linux-gcc
+CXX=arm-linux-g++
+CFLAGS+=-I/usr/local/arm_rtp/include -I/usr/local/arm_rtp/include/jrtplib3 -L/usr/local/arm_rtp/lib -L/usr/local/arm_rtp/lib/ -g
+OBJ+=v4l2.o jpegvideo.o cache.o imgproc.o
+all:s r
+
+r:$(OBJ)
+	$(CXX) -o reciever jpegrtp_recieve.cpp cache.o sdl_view.o -lSDL -lSDL_image $(LIBS) $(CFLAGS)
+s:clean v4l2.o imgproc.o
+	$(CXX)  -o sender   v4l2_sendrtp.cpp v4l2.o imgproc.o    $(LIBS) $(CFLAGS) 
+	cp sender /srv/tftp/sender
+%.o:%.c
+	$(CC) -c $<
+clean:
+	rm -rf reciever sender 
+	rm *.o

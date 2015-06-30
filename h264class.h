@@ -1,6 +1,5 @@
 #ifndef H264CLASS_H
 #define H264CLASS_H
-//#include "T264.h"
 #include <stdint.h>
 extern "C"
 {

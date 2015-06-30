@@ -1,0 +1,42 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: T264 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~2\LOCALS~1\Temp\RSP129.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /ZI /Od /I "../../common" /I "../../decoder" /I "../../encoder" /I "../../encoder/sse2" /I "../../encoder/plugins" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /FR"Debug\exe/" /Fo"Debug\exe/" /Fd"Debug\exe/" /TC /GZ /c 
+"D:\H.264\avc-src-0.14\avc\encoder\T264.c"
+"D:\H.264\avc-src-0.14\avc\encoder\win.c"
+"D:\H.264\avc-src-0.14\avc\encoder\yuvrgb24.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~2\LOCALS~1\Temp\RSP129.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~2\LOCALS~1\Temp\RSP12A.tmp" with contents
+[
+..\bin\t264libd.lib kernel32.lib user32.lib gdi32.lib /nologo /subsystem:console /incremental:yes /pdb:".\..\bin/T264.pdb" /debug /machine:IX86 /out:"..\bin\T264.exe" /pdbtype:sept 
+".\Debug\exe\T264.obj"
+".\Debug\exe\win.obj"
+".\Debug\exe\yuvrgb24.obj"
+"\H.264\avc-src-0.14\avc\build\bin\t264libd.lib"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~2\LOCALS~1\Temp\RSP12A.tmp"
+<h3>Output Window</h3>
+Compiling...
+T264.c
+win.c
+yuvrgb24.c
+Generating Code...
+Linking...
+LINK : fatal error LNK1104: cannot open file "..\bin\t264libd.lib"
+Error executing link.exe.
+
+
+
+<h3>Results</h3>
+T264.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

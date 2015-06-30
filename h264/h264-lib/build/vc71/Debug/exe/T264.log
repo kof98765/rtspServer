@@ -1,0 +1,152 @@
+﻿生成启动时间为 2015/6/16 13:34:01。
+     1>项目“D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\build\vc71\T264.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\exe\T264.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../../common/ /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\exe\\" /Fd"Debug\exe\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\encoder\T264.c ..\..\encoder\win.c ..\..\encoder\yuvrgb24.c
+         yuvrgb24.c
+         win.c
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\win.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\win.c(229): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 参见“strcpy”的声明
+         T264.c
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\common\t264.h(36): warning C4005: “DECLARE_ALIGNED_MATRIX_H”: 宏重定义
+                 d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\common\portab.h(84) : 参见“DECLARE_ALIGNED_MATRIX_H”的前一个定义
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(130): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : 参见“fopen”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(137): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(143): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(144): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(145): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(146): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(147): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(148): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(149): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(150): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(151): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(152): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(153): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(154): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(155): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(156): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(157): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(158): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(159): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(160): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(161): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(162): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(163): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(165): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(167): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(169): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(171): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(173): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(175): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(177): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(179): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(181): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(183): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(185): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(187): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(189): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(191): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(193): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(195): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(197): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(199): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(201): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(203): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(205): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(207): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(209): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(211): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(212): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(214): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(215): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(216): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(253): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : 参见“fopen”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(260): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : 参见“fopen”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(271): warning C4996: '_ftime64': This function or variable may be unsafe. Consider using _ftime64_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\sys\timeb.h(124) : 参见“_ftime64”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(293): warning C4996: '_ftime64': This function or variable may be unsafe. Consider using _ftime64_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\sys\timeb.h(124) : 参见“_ftime64”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(394): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : 参见“fopen”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(418): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : 参见“fopen”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(427): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : 参见“fopen”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(435): warning C4996: '_ftime64': This function or variable may be unsafe. Consider using _ftime64_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\sys\timeb.h(124) : 参见“_ftime64”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(557): warning C4996: '_ftime64': This function or variable may be unsafe. Consider using _ftime64_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\sys\timeb.h(124) : 参见“_ftime64”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(630): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 参见“strcpy”的声明
+     1>d:\360downloads\3620096h264\项目专题1（h.264远程视频监控）\h.264编码库\h264-lib\encoder\t264.c(638): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 参见“strcpy”的声明
+         正在生成代码...
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\exe\T264.exe.embed.manifest.res" Debug\exe\T264_manifest.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\bin\T264.exe" /INCREMENTAL /NOLOGO ..\bin\t264libd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\exe\T264.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"..\bin\T264.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\bin\T264.lib" /MACHINE:X86 Debug\exe\T264.exe.embed.manifest.res
+         Debug\exe\T264.obj
+         Debug\exe\win.obj
+         Debug\exe\yuvrgb24.obj
+     1>LINK : fatal error LNK1104: 无法打开文件“LIBCD.lib”
+     1>已完成生成项目“D:\360Downloads\3620096H264\项目专题1（H.264远程视频监控）\H.264编码库\h264-lib\build\vc71\T264.vcxproj”(build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:02.66

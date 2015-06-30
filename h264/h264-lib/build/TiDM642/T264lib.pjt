@@ -1,0 +1,91 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectDir="E:\avc-0.14\avc\build\TiDM642\"
+ProjectType=Library
+CPUFamily=TMS320C64XX
+Tool="Archiver"
+Tool="Compiler"
+Tool="DspBiosBuilder"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="..\..\common\cabac_engine.c"
+Source="..\..\common\dct.c"
+Source="..\..\common\deblock.c"
+Source="..\..\common\utility.c"
+Source="..\..\decoder\block.c"
+Source="..\..\decoder\dec_cabac.c"
+Source="..\..\decoder\dec_cavlc.c"
+Source="..\..\decoder\T264dec.c"
+Source="..\..\encoder\cabac.c"
+Source="..\..\encoder\cavlc.c"
+Source="..\..\encoder\estimation.c"
+Source="..\..\encoder\inter.c"
+Source="..\..\encoder\inter_b.c"
+Source="..\..\encoder\interpolate.c"
+Source="..\..\encoder\intra.c"
+Source="..\..\encoder\plugins\ratecontrol.c"
+Source="..\..\encoder\plugins\stat.c"
+Source="..\..\encoder\predict.c"
+Source="..\..\encoder\rbsp.c"
+Source="..\..\encoder\t264enc.c"
+Source="..\..\encoder\typedecision.c"
+
+[Generated Files]
+Source="Debug\block.obj"
+Source="Debug\cabac.obj"
+Source="Debug\cabac_engine.obj"
+Source="Debug\cavlc.obj"
+Source="Debug\dct.obj"
+Source="Debug\deblock.obj"
+Source="Debug\dec_cabac.obj"
+Source="Debug\dec_cavlc.obj"
+Source="Debug\estimation.obj"
+Source="Debug\inter.obj"
+Source="Debug\inter_b.obj"
+Source="Debug\interpolate.obj"
+Source="Debug\intra.obj"
+Source="Debug\predict.obj"
+Source="Debug\ratecontrol.obj"
+Source="Debug\rbsp.obj"
+Source="Debug\stat.obj"
+Source="Debug\T264dec.obj"
+Source="Debug\t264enc.obj"
+Source="Debug\typedecision.obj"
+Source="Debug\utility.obj"
+
+["Archiver" Settings: "Debug"]
+Options=-r -o.\Debug\T264lib.lib
+
+["Archiver" Settings: "Release"]
+Options=-r -o.\Release\T264lib.lib
+
+["Compiler" Settings: "Debug"]
+Options=-g -q -fr"E:\avc-0.14\avc\build\TiDM642\Debug" -i"../common" -i"../decoder" -i"../encoder" -i"../encoder/plugins" -i"../../common" -d"_DEBUG" -d"_TI_DM642" -mv6400
+
+["Compiler" Settings: "Release"]
+Options=-q -o3 -fr"E:\avc-0.14\avc\build\TiDM642\Release" -i"../common" -i"../decoder" -i"../encoder" -i"../encoder/plugins" -i"../../common" -d"_TI_DM642" -mt -mv6400
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v6x
+
+["DspBiosBuilder" Settings: "Release"]
+Options=-v6x
+
+["..\..\common\deblock.c" Settings: "Release"]
+Options="Compiler" +{-o1} -{-o3}
+
+["..\..\decoder\dec_cabac.c" Settings: "Release"]
+Options="Compiler" +{-o1} -{-o3}
+
+["..\..\decoder\dec_cavlc.c" Settings: "Release"]
+Options="Compiler" +{-o1} -{-o3}
+
+["..\..\encoder\cabac.c" Settings: "Release"]
+Options="Compiler" +{-o1} -{-o3}
+
+["..\..\encoder\cavlc.c" Settings: "Release"]
+Options="Compiler" +{-o1} -{-o3}
+
