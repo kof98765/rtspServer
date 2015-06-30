@@ -19,7 +19,8 @@ SOURCES += main.cpp\
     rtpclass.cpp \
     h264class.cpp \
     h264/convert.c \
-    decodeandsendthread.cpp
+    decodeandsendthread.cpp \
+    rtspserver.cpp
 
 HEADERS  += mainwindow.h \
     rtpclient.h \
@@ -27,7 +28,8 @@ HEADERS  += mainwindow.h \
     rtpclass.h \
     h264class.h \
     h264/convert.h \
-    decodeandsendthread.h
+    decodeandsendthread.h \
+    rtspserver.h
 
 FORMS    += mainwindow.ui
 
@@ -57,7 +59,8 @@ INCLUDEPATH+="../h264/x264/extras"
 QMAKE_LIBDIR+="D:/opencv/build/install/lib"
 QMAKE_LIBDIR+="../h264"
 QMAKE_LIBDIR+="../h264/x264"
-
+#/MP用于并行编译
+QMAKE_CXXFLAGS += /MP
 DEFINES-=_MSC_VER
 DEFINES +=_CRT_SECURE_NO_WARNINGS
 LIBS += -lopencv_core231d \

@@ -2,7 +2,7 @@
 rtpClient::rtpClient(QObject *parent) :
     rtpClass(parent)
 {
-    sess=new RTPSession;
+    //sess=new RTPSession;
     index=0;
     sem.release(maxThreadNum);
     currentIndex=0;
@@ -57,7 +57,7 @@ rtpClient::~rtpClient()
 {
     timer->stop();
     cvReleaseCapture(&capture);
-    sess->Destroy();
+    Destroy();
 
 }
 void rtpClient::rtpInit(QString ip,int port)
@@ -93,16 +93,16 @@ void rtpClient::rtpInit(QString ip,int port)
     transparams.SetPortbase(portbase);
     // 创建RTP会话
 
-    status = sess->Create(sessparams,&transparams);
-    sess->SetDefaultTimestampIncrement(25/90000);
-    checkerror(status);
+    status = Create(sessparams,&transparams);
+    SetDefaultTimestampIncrement(25/90000);
+    checkerror(status,"Create Client");
 
     // 指定RTP数据接收端
 
-    status = sess->AddDestination(addr);
-    sess->SetDefaultPayloadType(96);
-    sess->SetDefaultMark(true);
-    checkerror(status);
+    status = AddDestination(addr);
+    SetDefaultPayloadType(96);
+    SetDefaultMark(true);
+    checkerror(status,"AddDestination");
 
     capture=(CvCapture *)cvCreateCameraCapture(0);
 }
@@ -118,14 +118,14 @@ void rtpClient::sendH264Data(unsigned char *buffer,int length)
 //    f.flush();
     if(length-1<=maxPicketSize)
     {
-        sess->SendPacket(&buffer[1],length-1,payloadType,false,timestamp);
+        SendPacket(&buffer[1],length-1,payloadType,false,timestamp);
         return;
     }
     else
     {
         buffer[0] = (buffer[1] & 0xE0) | 28; // FU indicator
         buffer[1] = 0x80 | (buffer[1] & 0x1F); // FU header (with S bit)
-        sess->SendPacket(buffer,maxPicketSize,payloadType,false,timestamp);
+        SendPacket(buffer,maxPicketSize,payloadType,false,timestamp);
         offset+=maxPicketSize-1;
 
     }
@@ -135,11 +135,11 @@ void rtpClient::sendH264Data(unsigned char *buffer,int length)
         buffer[offset - 2] = buffer[0]; // FU indicator
         buffer[offset - 1] = buffer[1] & ~0x80; // FU header (no S bit)
         if(i>maxPicketSize)
-            sess->SendPacket(&buffer[offset-2],maxPicketSize,payloadType,false,timestamp);
+            SendPacket(&buffer[offset-2],maxPicketSize,payloadType,false,timestamp);
         else
         {
             buffer[offset-1]|=0x40;
-            sess->SendPacket(&buffer[offset-2],length-offset+2,payloadType,false,timestamp);
+            SendPacket(&buffer[offset-2],length-offset+2,payloadType,false,timestamp);
         }
         offset+=maxPicketSize-2;
      }

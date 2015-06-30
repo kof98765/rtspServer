@@ -1,10 +1,10 @@
 #include "rtpclass.h"
 
-void rtpClass::checkerror(int rtperr)
+void rtpClass::checkerror(int rtperr,char *error)
 {
     if (rtperr < 0)
     {
-        std::cout << "ERROR: " << RTPGetErrorString(rtperr) <<rtperr<< std::endl;
+        std::cout << error<<"error:"<< RTPGetErrorString(rtperr) <<rtperr<< std::endl;
         exit(-1);
     }
 }
@@ -68,7 +68,7 @@ void rtpClass::stopThread()
         stopped = true;
 
 
-        this->terminate();
+
         if(isFinished())
             qDebug()<<"thread quit";
     }

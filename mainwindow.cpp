@@ -8,9 +8,10 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     client=new rtpClient();
     server=new rtpServer();
-
-    server->rtp_recv_init(5000);
-    //server->startThread();
+    rtspServer=new RtspServer();
+    server->rtp_recv_init(5400);
+    rtspServer->initSocked(NULL,5500);
+    server->startThread();
     connect(client,SIGNAL(display(IplImage*,int)),this,SLOT(display(IplImage*,int)));
     connect(server,SIGNAL(display(IplImage*,int)),this,SLOT(display(IplImage*,int)));
     connect(client,SIGNAL(heartpack()),this,SLOT(countPack()));
@@ -23,9 +24,8 @@ MainWindow::~MainWindow()
 {
     client->stopThread();
     server->stopThread();
+    delete rtspServer;
 
-    delete client;
-    delete server;
     delete ui;
 }
 void MainWindow::display(IplImage *dst,int index)

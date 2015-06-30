@@ -10,7 +10,11 @@
 #include "rtpsession.h"
 #include "rtpsourcedata.h"
 #include "rtpudpv4transmitter.h"
+#include "rtcpcompoundpacket.h"
+#include "rtcpsrpacket.h"
 #include "rtpipv4address.h"
+#include "rtppacket.h"
+
 #include "rtpsessionparams.h"
 #include <stdio.h>
 #include <iostream>
@@ -37,7 +41,7 @@ typedef struct pic_data
 Q_DECLARE_METATYPE(pic_data)
 
 
-class rtpClass : public QThread
+class rtpClass : public QThread,public RTPSession
 {
     Q_OBJECT
 public:
@@ -45,11 +49,13 @@ public:
     ~rtpClass();
      void startThread();
      void stopThread();
-    void checkerror(int rtperr);
+    void checkerror(int rtperr,char *error);
   void delay(unsigned long time);
     void initInstance();
     IplImage* QImageToIplImage(const QImage * qImage);
+
 protected:
+
     bool stopped;
 
 signals:

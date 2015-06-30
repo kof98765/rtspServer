@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include "rtpclient.h"
 #include "rtpserver.h"
+#include "rtspserver.h"
 namespace Ui {
 class MainWindow;
 }
@@ -27,6 +28,7 @@ private:
     Ui::MainWindow *ui;
     rtpClient *client;
     rtpServer *server;
+    RtspServer *rtspServer;
     void closeEvent();
 };
 

@@ -19,7 +19,7 @@ public:
      void rtpInit(QString ip,int port);
      void decodeData(int index,unsigned char *buf,unsigned char *yuv);
 private:
-     RTPSession *sess;
+   //  RTPSession *sess;
      pic_data picData;
      QList<QByteArray*> cacheLink;
      unsigned char buffer[14745600];
